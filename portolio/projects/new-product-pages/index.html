@@ -1,0 +1,1234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<title>Sprout Pro by HP</title>
+</head>
+<body>
+<link rel="Stylesheet" type="text/css" href="css/HPExperience.1.4.css" />
+<link type="text/css" rel="Stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/hps-fontface-remove.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- bxSlider Javascript file -->
+<script src="bxslider/jquery.epslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="bxslider/jquery.epslider.css" rel="stylesheet" />
+<style>
+.h1, .h2, .h3, h1, h2, h3, p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1.2em;
+}
+#hero-banner{
+	background: url(images/hero-bg.jpg)no-repeat center center;
+	min-height: 719px;
+}
+#hero-banner h3{
+	font-size: 36px;
+
+}
+.content-wrapp{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.content-hero{
+	max-width: 400px;
+	padding-top: 100px;
+}
+#hero-banner h2{
+	font-size: 34px;
+	font-weight: lighter;
+}
+#hero-banner p{
+	color: #767676;
+	font-size: 16px;
+	padding-top: 10px;
+}
+a.cta-oriange1{
+	font-size: 22px;
+	font-weight: lighter;
+	padding: 10px 60px;
+	background: #d7410b;
+	color: #ffffff;
+	text-decoration: none;
+}
+a.cta-oriange1:hover, a.cta-oriange1:active, a.cta-oriange1:focus{
+	background: #C14D1A;
+	text-decoration: none;
+}
+a.cta-call-btn{
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border:1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+}
+.cta-call-btn:hover, .cta-call-btn:active, .cta-call-btn:focus{
+  text-decoration: none;
+  color: #000000;
+  border:1px solid #000000;
+}
+.fa-phone:before{
+  color: #000000;
+  font-size: 22px;
+}
+.blackline{
+	width: 90%;
+	margin: 0 auto;
+	height : 1px;
+	background: #767676;
+	position: absolute;
+	top: 60px;
+}
+.tab-blocks .img-blk.blackline{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	display: block;
+}
+#art-work .blackline, #art-work2 .blackline, #value-prop .blackline
+{
+	top: 30px;
+}
+.content-wrapp h1{
+	font-size: 36px;
+	text-align: center;
+	font-weight: lighter;
+}
+div.video-wrap{
+   min-height: 523px;
+   position: relative;
+   background: url(images/video-thumb.jpg) no-repeat center center;
+}              /* 1 */
+div.play-button{
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%; 
+   left: 40%;                        /* 3 */
+   transform: translate(0, -50%);
+   width: 200px;
+   min-height: 200px;
+   margin: 0 auto;
+   background: url(images/play-button.png) no-repeat center center;
+   cursor: pointer;
+}
+div.play-button:hover{
+	background: url(images/play-button-hover.png) no-repeat center center;
+}
+.tab-container {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 20px;
+}
+.tab-wrapp{
+	border-bottom: 1px solid #767676;
+}
+.tab-wrapp p{
+	font-size: 18px;
+	color: #767676;
+	text-align: center;
+	font-weight: lighter;
+}
+.tab-sub{
+	cursor: pointer;
+}
+.tab-sub.active{
+    border-bottom: 4px solid #c5215e;
+    min-height: 40px;
+}
+#sprout-intuitive {
+    width: 100%;
+    height: 1000px;
+    background: url(images/sprout-intuitive.jpg) no-repeat top left;
+    margin-top: 30px;
+}
+.text-box{
+	max-width: 300px;
+}
+.text-box h3{
+	font-size: 32px;
+	font-weight: lighter;
+}
+.text-box p{
+	font-size: 16px;
+	color: #767676;
+	padding-top: 10px;
+}
+.text-box h4{
+	font-size: 24px;
+	font-weight: lighter;
+	float: left;
+}
+#text-box-1 {
+    padding-top: 50px;
+}
+#text-box-1 {
+    padding-top: 110px;
+}
+.tab-content .row{
+	margin: 0px;
+}
+div#text-box-2 {
+    margin-top: 370px;
+    max-width: 400px;
+    float: left;
+}
+div#text-box-3 {
+	float: right;
+}
+div#text-box-3 {
+    float: right;
+    margin-top: 300px;
+    margin-right: 20px;
+    max-width: 360px;
+}
+.tab-content {
+    margin-top: 30px;
+}
+.left-text-art{
+	max-width: 540px;
+	float: left;
+	margin-top: 50px;
+}
+#art-work-2 .left-text-art{
+	max-width: 340px;
+}
+#art-work-2 .right-img-art{
+	max-width: 620px;
+	margin-top: 20px;
+}
+.right-img-art{
+	max-width: 420px;
+	float: left;
+	margin-top: 100px;
+}
+a.cta-purple{
+	text-decoration: none;
+	color: #c5215e;
+}
+a.cta-purple:hover, a.cta-purple:active, a.cta-purple:focus{
+	text-decoration: underline;
+}
+.num-circle{
+	border: 1px solid #000000;
+	border-radius: 25px;
+	font-size: 24px;
+	margin-right: 30px;
+	padding: 0px 10px;
+	float: left;
+	margin-top: 10px;
+}
+#termsandconditions{
+	margin-top: 50px;
+}
+#termsandconditions p{
+	color: #767676;
+	font-size: 14px;
+}
+.tab-blocks{
+	display:none;
+}
+.tab-blocks.active{
+	display: block;
+}
+.ksp-sprout .left-text-art{
+	width: 40%;
+	margin-right: 10%;
+}
+.ksp-sprout .left-text-art:last-of-type{
+	margin-right :0px;
+	width: 48%;
+}
+.ksp-small h2{
+	font-size: 22px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 20px;
+}
+.ksp-small {
+	max-width: 250px;
+	float: right;
+}
+.ksp-small.right{
+	float: left;
+	margin-left : 50px;
+}
+.ksp-small p{
+	font-size: 16px;
+	text-align: center;
+	color: #8a8a8a;
+}
+#specification-table .blackline{
+	top: 30px;
+}
+#specification-table{
+	margin-top: 50px;
+}
+.specs-table th{
+	background: #bae7e5;
+	padding: 10px 20px;
+}
+.specs-table td{
+	padding: 10px 20px;
+}
+.specs-table th.title, .specs-table td.title{
+	font-size: 22px;
+	width: 30%;
+	font-weight: normal;
+}
+.specs-table{
+	width: 100%;
+	margin-top: 50px;
+}
+.specs-table th, .specs-table td{
+	font-size: 16px;
+	width: 70%;
+	font-weight: lighter;
+}
+#greenbanner{
+	margin-top: 50px;
+	padding: 50px 0px;
+	background: url(images/background-green.jpg) no-repeat center center;
+}
+#greenbanner h1, #greenbanner p{
+	color: #ffffff;
+	text-align: center;
+}
+#greenbanner p, a{
+	font-weight: lighter;
+	text-decoration: none;
+	color: #ffffff;
+}
+#greenbanner .blackline{
+	background: #ffffff;
+	top: 30px;
+}
+#value-prop{
+	margin-top: 30px;
+}
+#value-prop .cols h3{
+	font-size: 28px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 20px;
+}
+#value-prop .cols p{
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 20px;
+}
+.cols {
+	margin-top: 40px;
+}
+.blue-burbles{
+	margin-top: -30px;
+	height: 52px;
+	background: url(images/background-blue.jpg) no-repeat center center;
+}
+.video-iframe{
+	display: none;
+}
+.video-iframe.click{
+	display: block;
+}
+.play-button.hidden{
+	display: none;
+}
+@-moz-keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-moz-transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-moz-transform: translateY(0px);
+	}
+}
+@-webkit-keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+@keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-ms-transform: translateY(0px);
+		transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(200px);
+		transform: translateY(0px);
+	}
+}
+.tab-blocks.active{
+	opacity: 1;
+	z-index: 100;
+	-webkit-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	-moz-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	-ms-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	animation: slideInUp 1.2s ease-in-out 0s backwards;
+}
+@media (max-width:768px) {
+	.blackline{
+		display: none;
+	}
+	div#text-box-3{
+		margin-top: 40px;
+		float: none;
+	}
+	#art-work{
+		margin-top: 50px;
+	}
+	#art-work2{
+		margin-top: 50px;
+	}
+	#sprout-intuitive{
+		height: 1200px;
+	}
+	#art-work-2 .left-text-art{
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+		max-width: 400px;
+	}
+	.blue-burbles{
+		margin-top: 20px;
+	}
+	.tab-wrapp{
+		padding-bottom:22px;
+	}
+	div.play-button{
+		left: 20%;
+	}
+	.content-hero{
+		background:rgba(255,255,255,0.5);
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#greenbanner h1{
+		font-size: 28px !important;
+	}
+	#jssor_2, #jssor_1{
+		max-width: 100%!important;
+		width: 100% !important;
+	}
+	#jssor_2 div, #jssor_1 div{
+		width: 100%!important;
+		margin: 0 auto;
+	}
+	#jssor_2 .col-xs-4, #jssor_1 .col-xs-4{
+	width: 50% !important; 
+	float: none;
+	margin: 0 auto;
+
+	}
+	.app-title{
+       margin-top: 40px !important;
+    }
+    .jssorb05{
+    	left: 40% !important;
+    }
+}
+@media (max-width:500px) {
+	div.video-wrap{
+   		min-height: 300px;
+   	}
+   	.video-iframe{
+   		height: 300px !important;
+   	}
+}
+</style>
+<div id="hero-banner">
+<img src="images/play-button.png" width="0" height="0"/>
+<img src="images/play-button-hover.png" width="0" height="0"/>
+	<div class="content-wrapp">
+		<div class="content-hero">
+			<h3>Sprout Pro by HP</h3>
+			<h2>Reinventing learning</h2>
+			<p>Sprout Pro by HP will reinvent the way we teach and learn through the power of creativity and immersive computing. It transforms the classroom into an immersive educational experience that revolutionizes the way teachers &amp; students learn, create, collaborate &amp; share.</p>
+			<p style="margin-top: 30px;"> 
+			 <a href="https://ssl.www8.hp.com/h41268/live/index.aspx?qid=26941" class="cta-oriange1" id="hero-cta">Shop now</a>
+			</p>
+			<p style="margin-top: 30px;">
+				<a class="cta-call-btn" target="_blank" href="tel:1800 770 456"><font style="color: #000000;"><i class="fa fa-phone" aria-hidden="true"></i></font>&nbsp; &nbsp;CALL 1800 770 456</a>
+			</p>
+			<p style="margin-top: 30px;">
+				<a class="cta-call-btn" href="https://ssl.www8.hp.com/h41268/live/index.aspx?qid=26941" target="_blank">Request a demo at your school</a>
+			</p>
+			<img src="images/windows10.png" alt="The product comes with the Windows 10." style="margin-top: 150px;"/>
+		</div>
+	</div>
+</div>
+<div id="video">
+	<div class="content-wrapp row">
+		<div class="col-md-2 col-sm-2 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+		<div class="col-md-8 col-sm-8 col-xs-12">
+			<h1>Imagination unleashed<br/>
+			See how people are using sprout to 
+			reimagine the way they create</h1>
+		</div>
+		<div class="col-md-2 col-sm-2 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+	</div>
+	<div class="content-wrapp">
+		<div class="video-wrap">
+			<iframe width="100%" height="523" src="" frameborder="0" allowfullscreen class="video-iframe" volume="0"></iframe>
+			<div class="play-button" id="play-button1">
+			</div>
+		</div>
+	</div>
+</div>
+<div id="tabs">
+	<div class="content-wrapp tab-wrapp">
+		<div class="tab-container">
+			<div class="col-md-4 col-sm-4 col-xs-4 tab-sub active" id="tab-1"><p>intuitive design</p></div>
+			<div class="col-md-4 col-sm-4 col-xs-4 tab-sub" id="tab-2"><p>ultimate performance</p></div>
+			<div class="col-md-4 col-sm-4 col-xs-4 tab-sub" id="tab-3"><p>apps for sprout pro</p></div>
+		</div>
+	</div>
+	<div class="tab-content">
+		<div id="tab1-content" class="tab-blocks active">
+			<div class="content-wrapp">
+				<h1>a more intuitive, natural way to work</h1>
+				<div id="sprout-intuitive">
+					<div class="text-box" id="text-box-1">
+					<h3>effortless collaboration</h3>
+					<p>Sprout's dual touch screens and cameras can be flexibly configured to enable a whole new level of remote sharing and collaboration.</p>
+					<p>Enable 1-to-1 or 1-to-many collaboration through the mat, webcam, and projector cam with an enhanced version of HP MyRoom.</p>
+					</div>
+					<div class="row">
+						<div class="text-box" id="text-box-2">
+							<h3>groundbreaking <br/>user interface</h3>
+							<p>Sprout gives you a new way to interact with your content. The two touch surfaces transform your desk's surface into a digital-physical workspace, giving you a more natural, more intuitive way to work. </p>
+							<p>Accelerate learning at every level with an immersive and intuitive computing experience that makes it easy to integrate hands-on learning into the classroom.</p>
+						</div>
+						<div class="text-box" id="text-box-3">
+							<h3>high performance <br/>all-in-one</h3>
+							<p>Sprout is so much more than an innovative tool. At its core, Sprout is a high-performance All-In-One computer with an upgraded Intel® Core™ i7 Processor, [3] 1TB of storage, [2] and new Windows 10 Pro[1] operating system. So it has plenty of power for everything from the office to the studio.</p>
+							<p>Maximize classroom IT budgets and close the technology gap by consolidating the classroom PC, digital projector, 3D scanner, and more into a cost effective, all-in-one solution with Sprout by HP.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="art-work">
+					<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h1>full 3D object capture</h1>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+				</div>
+				<div class="row">
+					<div class="left-text-art text-box">
+						<h3>incredibly easy</h3>
+						<p>3D scanning is fast and easy on Sprout by HP. With just a few taps, Sprout’s 3D Capture app creates a high resolution, full color 3D digital model that you can manipulate any way you choose. The optional 3D Capture Stage automates most of the process, delivering better, faster, and more consistent 3D scans.</p>
+						<!-- <p><a href="" class="cta-purple">learn more</a></p><br/> -->
+						<h3>how it works</h3>
+						<span class="num-circle">1</span><h4 style="width: 80%;">grab<br/><font style="font-size: 16px; color: #767676;">Use Sprout's Illuminator with Intel&reg; RealSense&trade; technology to scan an object in 3D.</font></h4>
+						<span class="num-circle">2</span><h4 style="width: 80%;">mash<br/><font style="font-size: 16px; color: #767676;">Reimagine objects in the digital world by resizing or adding new design elements.</font></h4>
+						<span class="num-circle">3</span><h4 style="width: 80%;">make<br/><font style="font-size: 16px; color: #767676;">3D print your creation at home or through one of HP's print service partners.</font></h4>
+					</div>
+					<div class="right-img-art">
+						<img src="images/artwork.jpg" style="max-width: 446px; width: 100%;"/>
+					</div>
+				</div>
+				<div class="row" id="art-work2">
+					<div class="col-md-2 col-sm-2 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<h1>the easiest way to express your creative vision</h1>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+				</div>
+				<div class="row" id="art-work-2">
+					<div class="left-text-art text-box">
+						<h3>the easiest way to create</h3>
+						<p>Sprout's breakthrough technology blends the physical and digital worlds to make creating easier than ever. By combining 3D capture of real-world objects with simple yet powerful editing tools, Sprout lets you quickly and easily bring your ideas to life.</p><br/><br/>
+						<h3>enhanced productivity <br/>and security</h3>
+						<p>Windows 10 Pro is designed to provide a safer, innovative and updated experience while helping you to manage your devices, apps, and identities on your organization's network.</p><br/><br/>
+						<h3>Intel&trade; RealSense&trade; 3d camera</h3>
+						<p>The revolutionary Illuminator is the heart of Sprout. It houses the Intel&reg; RealSense&trade; 3D Camera and projection engine, which allow you to scan 2D or 3D objects and display them on the touch mat.</p>
+					</div>
+					<div class="right-img-art">
+						<img src="images/top-view.jpg" style="max-width: 611px; width: 100%;"/>
+					</div>
+				</div>
+				<div class="row" id="termsandconditions">
+					<p>
+						1.Not all features are available in all editions or versions of Windows. Systems may require upgraded and/or separately purchased hardware, drivers, software or BIOS update to take full advantage of Windows functionality. Windows 10 is automatically updated, which is always enabled. ISP fees may apply and additional requirements may apply over time for updates. See <a href="http://www.microsoft.com" target="_blank">http://www.microsoft.com</a><br/>
+						2.Multi-Core is designed to improve performance of certain software products. Not all customers or software applications will necessarily benefit from use of this technology. Performance and clock frequency will vary depending on application workload and your hardware and software configurations. Intel’s numbering is not a measurement of higher performance. <br/>
+						3.For storage drives GB = 1 billion bytes. TB = 1 trillion bytes. Actual formatted capacity is less. Up to 30 GB is reserved for system recovery software. <br/>
+						4.Microsoft Office subscription required. <br/>
+						5.Estimated availability March 2016. <br/>
+						6.Estimated availability February 2016.<br/>
+						7.Sound Edge&reg; is a registered trademark of Sound Research Corporation<br/>
+						8.Requires Intel&reg; WiDi compatible TV or display<br/>
+					</p><br/><br/><br/>
+					<p>
+						Prices, specifications, availability and terms of offers may change without notice. Price protection, price matching or price guarantees do not apply to Intra-day, Daily Deals or limited-time promotions. Quantity limits may apply to orders, including orders for discounted and promotional items. Despite our best efforts, a small number of items may contain pricing, typography, or photography errors. Correct prices and promotions are validated at the time your order is placed. These terms apply only to products sold by HP.com; reseller offers may vary. Items sold by the HP.com are not for immediate resale. Orders that do not comply with HP.com terms, conditions, and limitations may be cancelled. <br/>
+						HP's MSRP is subject to discount. HP's MSRP price is shown as either a stand-alone price or as a strike-through price with a discounted or promotional price also listed. Discounted or promotional pricing is indicated by the presence of an additional higher MSRP strike-through price.<br/>
+						In-home warranty is available only on select customizable HP desktop PCs. Need for in-home service is determined by HP support representative. Customer may be required to run system self-test programs or correct reported faults by following advice given over phone. On-site services provided only if issue can't be corrected remotely. Service not available holidays and weekends.<br/>
+						HP will transfer your name and address information, IP address, products ordered and associated costs and other personal information related to processing your application to Bill Me Later&reg;. Bill Me Later will use that data under its privacy policy.<br/>
+						Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br/>
+						Microsoft Windows 10: Not all features are available in all editions or versions of Windows 10. Systems may require upgraded and/or separately purchased hardware, drivers, software or BIOS update to take full advantage of Windows 10 functionality. Windows 10 is automatically updated, which is always enabled. ISP fees may apply and additional requirements may apply over time for updates. See <a href="http://www.microsoft.com">http://www.microsoft.com</a>.
+					</p>
+				</div>
+			</div>			
+		</div>
+		<div id="tab2-content" class="tab-blocks">
+			<div class="content-wrapp">
+				<h1>a high performance all-in-one</h1>
+				<div style="max-width: 750px; margin: 0 auto;">
+					<img src="images/sprout-half.png" alt="Sprout Display" style="width: 100%; max-width: 750px;"/>
+				</div>
+				<div class="row">
+					<div class="blackline img-blk">&nbsp;</div>
+				</div>
+				<div class="row ksp-sprout">
+					<div class="left-text-art text-box">
+						<h3>Windows 10 Pro</h3>
+						<p>The operating system designed for touch makes daily productivity totally effortless. Start it up in an instant, quickly switch between applications and manage your files easier. Plus, you can personalize your experience with your favorite apps from the Windows Store.</p>
+						<img src="images/windows10-logo.png" style="margin-top: 30px; width: 100%; max-width: 146px;"/>
+					</div>
+					<div class="left-text-art text-box">
+						<h3>Intel&reg; Core&trade; i7 Processor</h3>
+						<p>The 6th generation Intel&reg; Core&trade; i7 Processor delivers top-of-the-line performance, with improved graphics, power efficiency and security. Intel&reg; Hyper-Threading technology allows for smooth multitasking and Iris graphics give you stunning 3D visuals and more advanced editing.</p>
+						<img src="images/i7-logo.png" style="margin-top: 30px; width: 100%; max-width: 42px;"/>
+					</div>
+				</div>
+				<div class="row ksp-sprout">
+					<div class="left-text-art text-box">
+						<h3>enhanced security</h3>
+						<p>Windows 10 Pro is designed to provide a safer, innovating and updated experience while helping you to manage your devices, apps, and identities on  your organization’s network.</p>
+						<img src="images/security.png" style="margin-top: 30px; width: 100%; max-width: 36px;"/>
+					</div>
+					<div class="left-text-art text-box">
+						<h3>supercharged graphics</h3>
+						<p>NVIDIA&trade; can handle your most graphically intensive tasks, from gaming to design. NVIDIA CUDA™ technology unlocks the power of the GPU’s processor cores to accelerate the most demanding system tasks, delivering incredible performance improvements over traditional CPUs.</p>
+						<img src="images/geforce.png" style="margin-top: 30px; width: 100%; max-width: 116px;"/>
+					</div>
+				</div>
+				<div class="row" style="margin: 50px 0px 20px 0px;">
+					<div class="blackline img-blk" style="background: #b9b8bb">&nbsp;</div>
+				</div>
+				<div class="row ksp-sprout">
+					<div class="left-text-art text-box">
+						<div class="ksp-small left">
+							<div style="max-width:57px; margin: 0 auto;">
+							<img src="images/ssd.png" alt="SSD" style="width: 100%; max-width: 57px;">
+							</div>
+							<h2>ssd</h2>
+							<p>ssd1TB hybrid SSD hard drive. The perfect combo of power and storage.</p>
+						</div>
+					</div>
+					<div class="left-text-art text-box">
+						<div class="ksp-small right">
+							<div style="max-width:57px; margin: 0 auto;">
+							<img src="images/memory.png" alt="Internal Memory" style="width: 100%; max-width: 43px;">
+							</div>
+							<h2>memory</h2>
+							<p>8GB of RAM to effortlessly run multiple programs simultaneously.</p>
+						</div>					
+					</div>
+				</div>
+				<div class="row" id="specification-table">
+					<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h1>sprout specifications</h1>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+				</div>
+				<div id="table-spec">
+					<table class="specs-table">
+						<tbody>
+							<tr>
+								<th class="title">Operating System</th>
+								<th>Windows 10 Pro</th>
+							</tr>
+							<tr>
+								<td class="title">HP Illuminator	</td>
+								<td>HP Illuminator, powered by the HP DLP Projector, the HP High-Resolution Camera with up to 14.6 megapixel resolution and the Intel&reg; RealSense&trade; 3D Camera for instant capture of 2D and 3D objects, along with an LED desk lamp</td>
+							</tr>
+							<tr>
+								<th class="title">HP Touch Mat</th>
+								<th>20" diagonal, 20-point touch-enabled touch mat with an ultra-resistant top coating</th>
+							</tr>
+							<tr>
+								<td class="title">Stylus</td>
+								<td>Adonit Jot Pro stylus to write and draw comfortably. It can be attached magnetically to the upper-right side of the Sprout display</td>
+							</tr>
+							<tr>
+								<th class="title">Processor	</th>
+								<th>6th generation Intel&reg; Core&trade; i7-4790S Processor</th>
+							</tr>
+							<tr>
+								<td class="title">Graphics</td>
+								<td>NVIDIA&trade; GeForce GT 745A with 2GB DDR3 dedicated memory</td>
+							</tr>
+							<tr>
+								<th class="title">Integrated Display</th>
+								<th>23" diagonal, 10-point touch-enabled, Full HD (1920x1080) Wide Viewing Angle, White-LED backlit LCD Display</th>
+							</tr>
+							<tr>
+								<td class="title">Memory</td>
+								<td>8 GB DDR3-1600 (expandable to 16 GB)</td>
+							</tr>
+							<tr>
+								<th class="title">Hybrid Drive</th>
+								<th>1TB SATA Solid State Hybrid Drive with 8GB flash acceleration cache offers SSD-like Speed &amp; HDD capacity</th>
+							</tr>
+							<tr>
+								<td class="title">Webcam</td>
+								<td>HP High Definition 1MP Webcam</td>
+							</tr>
+							<tr>
+								<th class="title">Sound	</th>
+								<th>DTS Sound&trade;</th>
+							</tr>
+							<tr>
+								<td class="title">Wireless</td>
+								<td>10/100/1000 Base-T Network and Integrated Bluetooth® 4.0 and Wireless LAN 802.11a/b/g/n featuring Dual-band (2.4GHz and 5GHz) 2x2 MIMO technology</td>
+							</tr>
+							<tr>
+								<th class="title">USB Ports</th>
+								<th>Dual USB 2.0 ports and dual USB 3.0 ports, including a powered port to charge phones or other USB devices</th>
+							</tr>
+							<tr>
+								<td class="title">Memory Card Reader</td>
+								<td>HP 3-in-1 Media Card Reader - Supports SD, SDHC, SDXC</td>
+							</tr>
+							<tr>
+								<th class="title">Keyboard and Mouse</th>
+								<th>Premium wireless chiclet-style keyboard with volume control, Windows 8 hot keys and optical mouse</th>
+							</tr>
+							<tr>
+								<td class="title">Sprout Workspace	</td>
+								<td>The app for capturing, creating and sharing your ideas</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="row" style="margin: 50px 0px 20px 0px;">
+										<div class="blackline img-blk" style="background: #b9b8bb">&nbsp;</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="title">Size and Weight</td>
+								<td>Height: 23.4 inches  (59.3 cm)<br/>
+									Width: 22.7 inches (57.6 cm)<br/>
+									Depth: 23.8 inches (60.4 cm)<br/>
+									Weight: 33.7 lb approx. (15.29 kg approx.)<br/>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="padding: 0px;">
+									<img src="images/dimensions.png" style="max-width: 739px; float: right; width: 100%;"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<div id="greenbanner" class="row">
+				<div class="content-wrapp">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1>HP Care has you covered</h1>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					</div>
+					<div class="row">
+						<h1 style="font-size: 33px; margin: 40px 0px;">Sprout Pro by HP comes with a 3 year peace-of-mind limited warranty(parts/labor/onsite) for a confidence that keeps your focus<br/>&amp; creativity where it should be.</h1>
+						<p style="font-size: 21px;">We're here to make sure everything is running smoothly. <br/>Visit <a href="sprout.hp.com/support">sprout.hp.com/support</a> or call HP Care at 1-888-654-9298.</p>
+					</div>				
+				</div>
+			</div>
+			<div id="value-prop" class="row">
+				<div class="content-wrapp">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1>also included with your order</h1>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 137px; margin: 0 auto;">
+								<img src="images/freeshipping.png" alt="Free Shipping Image">
+							</div>
+							<h3>Free shipping &amp; returns</h3>
+							<p>Get free shipping on the orders* via the HP Australia online store or by phone. <br/>AND if you need to send something back, that's free, too. (*orders below $50 subject to $7.95 shipping fee.)</p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 56px; margin: 0 auto;">
+								<img src="images/price.png" alt="Free Shipping Image">
+							</div>
+							<h3 style="margin-top: 10px;">Price matching</h3>
+							<p>Get the lowest price on HP technology, always. If you find a lower price on another online store, we'll match it.</p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 82px; margin: 0 auto;">
+								<img src="images/support.png" alt="Free Shipping Image">
+							</div>
+							<h3>24/7 Free support</h3>
+							<p>Get free product setup and technical support from the ones who know HP products best 365 days a year.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div style="max-width: 400px; float: right;" class="cols">
+							<h3 style="font-size: 24px; text-align: right;">The <font style=" font-style: italic;">only</font> place to get it all - hp.com</h3>
+							<p style="text-align: right; text-decoration: none; margin-top: 0px;"><a href="hpshopping.com.au" style=" font-style: italic; color: #0093d8;">hpshopping.com.au</a></p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="blue-burbles">
+						</div>
+					</div>	
+					<div class="row" id="termsandconditions">
+					<p>
+						Prices, specifications, availability and terms of offers may change without notice. Price protection, price matching or price guarantees do not apply to Intra-day, Daily Deals or limited-time promotions. Quantity limits may apply to orders, including orders for discounted and promotional items. Despite our best efforts, a small number of items may contain pricing, typography, or photography errors. Correct prices and promotions are validated at the time your order is placed. These terms apply only to products sold by HP.com; reseller offers may vary. Items sold by the HP.com are not for immediate resale. Orders that do not comply with HP.com terms, conditions, and limitations may be cancelled. <br/>
+						HP's MSRP is subject to discount. HP's MSRP price is shown as either a stand-alone price or as a strike-through price with a discounted or promotional price also listed. Discounted or promotional pricing is indicated by the presence of an additional higher MSRP strike-through price.<br/>
+						In-home warranty is available only on select customizable HP desktop PCs. Need for in-home service is determined by HP support representative. Customer may be required to run system self-test programs or correct reported faults by following advice given over phone. On-site services provided only if issue can't be corrected remotely. Service not available holidays and weekends.<br/>
+						HP will transfer your name and address information, IP address, products ordered and associated costs and other personal information related to processing your application to Bill Me Later&reg;. Bill Me Later will use that data under its privacy policy.<br/>
+						Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br/>
+						Microsoft Windows 10: Not all features are available in all editions or versions of Windows 10. Systems may require upgraded and/or separately purchased hardware, drivers, software or BIOS update to take full advantage of Windows 10 functionality. Windows 10 is automatically updated, which is always enabled. ISP fees may apply and additional requirements may apply over time for updates. See <a href="http://www.microsoft.com">http://www.microsoft.com</a>.
+					</p>
+				</div>		
+				</div>
+			</div>
+		</div>
+		<div id="tab3-content" class="tab-blocks">
+		 	<div class="content-wrapp">
+				<h1>apps designed for sprout's unique technology</h1>
+				<h3 style="text-align: center; font-weight: lighter; margin-top: 20px;">create, collaborate, and play like never before with apps developed<br/>specifically for sprout’s unique technology</h3>
+
+				<h2 style="text-align: center;margin-top: 30px; margin-bottom: 30px; font-size: 38px; font-weight: lighter;">Apps for business</h3>
+				 <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: false,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+         /*   function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize,1050);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);*/
+            //responsive code end
+        });
+    </script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/s-21px-hpe.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: left -2811px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover {     background-position: left -2846px; }
+        .jssorb05 .av {     background-position: left -2846px;}
+        .jssorb05 .dn, .jssorb05 .dn:hover {     background-position: left -2846px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 36px;
+            cursor: pointer;
+            background: url('img/s-31px-hpe.png') top left no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: left -270px; }
+        .jssora22r { background-position: left -330px; }
+        .jssora22l:hover { background-position: left -390px; }
+        .jssora22r:hover {     background-position: left -450px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .app-title{
+        	font-weight: lighter; margin-top: 100px;
+        }
+    </style>
+
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1000px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                 <div class="row">
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/msoffice_plugins.png" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 300px;">
+	                 		<h2 class="app-title">Microsoft Office Plugins</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Instantly add photos and text to your presentation or document by placing items on the mat and capturing them.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+            </div>
+           <div data-p="225.00" style="display: none;">
+                <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/3d_capture.png" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 300px;">
+	                 		<h2 class="app-title">3D Capture</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Sprout's 3D Capture app produces high-resolution, full-color scans with just a few simple taps.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+           <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                 <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/myroom.jpg" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 300px;">
+	                 		<h2 class="app-title">MyRoom</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Collaborate like never before – work together on projects in real-time, share your screen, mat and application while talking to your counterpart in a full screen view instead of a thumbnail.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+           <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                 <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/power_director.png" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 300px;">
+	                 		<h2 class="app-title">PowerDirector</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Turn your family memories into all-time favorite movies.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+
+        </div>
+        <!-- Bullet Navigator -->
+      <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+          <div data-u="prototype" style="width:16px;height:16px;"></div>
+      </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <!-- #endregion Jssor Slider End -->
+
+
+	<h2 style="text-align: center;margin-top: 30px; margin-bottom: 30px; font-size: 38px; font-weight: lighter;">Apps for education</h3>
+
+
+    <div id="jssor_2" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1000px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                 <div class="row">
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/crayola_color_draw_sing.png" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 350px;">
+	                 		<h2 class="app-title">Crayola Color Draw &amp; Sing</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Draw and color with music! A fun, creative, and educational experience for kids!</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+            </div>
+           <div data-p="225.00" style="display: none;">
+                <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/stop_motion.jpg" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 350px;">
+	                 		<h2 class="app-title">Stop Motion</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Stop Motion makes it easy to create stop motion animation videos using assets from your computer or captured from the Sprout mat. You can use high-quality digital images to create a professional animation, or make a quick and fun Claymation video with art supplies you have on hand.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+           <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                 <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/martha_stewart.png" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 350px;">
+	                 		<h2 class="app-title">Martha Stewart CraftStudio</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Create, print and share personalized cards, invitations, scrapbook pages and more!</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+           <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                 <div class="row">
+                	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 	<div class="col-md-4 col-sm-4 col-xs-4">
+                 		<img src="images/light_stencil.jpg" alt="" style="width: 100%">
+                 	</div>
+                 	<div class="col-md-6 col-sm-6 col-xs-6">
+                 		<div style="max-width: 350px;">
+	                 		<h2 class="app-title">Light Stencil</h2>
+	                 		<p style="font-size: 18px;
+						    line-height: 24px;">Easily scan, edit, project, and trace images for projects.</p>
+					    </div>
+                 	</div>
+                 	<div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                 </div>
+           </div>
+
+        </div>
+        <!-- Bullet Navigator -->
+      <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+          <div data-u="prototype" style="width:16px;height:16px;"></div>
+      </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <!-- #endregion Jssor Slider End -->
+			</div>
+			<div id="greenbanner" class="row">
+				<div class="content-wrapp">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1>HP Care has you covered</h1>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					</div>
+					<div class="row">
+						<h1 style="font-size: 33px; margin: 40px 0px;">Sprout Pro by HP comes with a 3 year peace-of-mind limited warranty(parts/labor/onsite) for a confidence that keeps your focus<br/>&amp; creativity where it should be.</h1>
+						<p style="font-size: 21px;">We're here to make sure everything is running smoothly. <br/>Visit <a href="sprout.hp.com/support">sprout.hp.com/support</a> or call HP Care at 1-888-654-9298.</p>
+					</div>				
+				</div>
+			</div>
+			<div id="value-prop" class="row">
+				<div class="content-wrapp">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1>also included with your order</h1>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12" style="position: relative;"><div class="blackline">&nbsp;</div></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 137px; margin: 0 auto;">
+								<img src="images/freeshipping.png" alt="Free Shipping Image">
+							</div>
+							<h3>Free shipping &amp; returns</h3>
+							<p>Get free shipping on the orders* via the HP Australia online store or by phone. <br/>AND if you need to send something back, that's free, too. (*orders below $50 subject to $7.95 shipping fee.)</p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 56px; margin: 0 auto;">
+								<img src="images/price.png" alt="Free Shipping Image">
+							</div>
+							<h3 style="margin-top: 10px;">Price matching</h3>
+							<p>Get the lowest price on HP technology, always. If you find a lower price on another online store, we'll match it.</p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 cols">
+							<div style="max-width: 82px; margin: 0 auto;">
+								<img src="images/support.png" alt="Free Shipping Image">
+							</div>
+							<h3>24/7 Free support</h3>
+							<p>Get free product setup and technical support from the ones who know HP products best 365 days a year.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div style="max-width: 400px; float: right;" class="cols">
+							<h3 style="font-size: 24px; text-align: right;">The <font style=" font-style: italic;">only</font> place to get it all - hp.com</h3>
+							<p style="text-align: right; text-decoration: none; margin-top: 0px;"><a href="hpshopping.com.au" style=" font-style: italic; color: #0093d8;">hpshopping.com.au</a></p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="blue-burbles">
+						</div>
+					</div>	
+					<div class="row" id="termsandconditions">
+					<p>Screens simulated, subject to change; Apps sold separately, availability may vary. Not all features are available in all editions or versions of Windows. Systems may require upgraded and/or separately purchased hardware, drivers, software or BIOS update to take full advantage of Windows functionality. Windows 10 is automatically updated, which is always enabled. ISP fees may apply and additional requirements may apply over time for updates. See <a href="http://www.microsoft.com" target="_blank">http://www.microsoft.com</a>
+					</p><br/><br/><br/>
+					<p>
+						Prices, specifications, availability and terms of offers may change without notice. Price protection, price matching or price guarantees do not apply to Intra-day, Daily Deals or limited-time promotions. Quantity limits may apply to orders, including orders for discounted and promotional items. Despite our best efforts, a small number of items may contain pricing, typography, or photography errors. Correct prices and promotions are validated at the time your order is placed. These terms apply only to products sold by HP.com; reseller offers may vary. Items sold by the HP.com are not for immediate resale. Orders that do not comply with HP.com terms, conditions, and limitations may be cancelled. <br/>
+						HP's MSRP is subject to discount. HP's MSRP price is shown as either a stand-alone price or as a strike-through price with a discounted or promotional price also listed. Discounted or promotional pricing is indicated by the presence of an additional higher MSRP strike-through price.<br/>
+						In-home warranty is available only on select customizable HP desktop PCs. Need for in-home service is determined by HP support representative. Customer may be required to run system self-test programs or correct reported faults by following advice given over phone. On-site services provided only if issue can't be corrected remotely. Service not available holidays and weekends.<br/>
+						HP will transfer your name and address information, IP address, products ordered and associated costs and other personal information related to processing your application to Bill Me Later&reg;. Bill Me Later will use that data under its privacy policy.<br/>
+						Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br/>
+						Microsoft Windows 10: Not all features are available in all editions or versions of Windows 10. Systems may require upgraded and/or separately purchased hardware, drivers, software or BIOS update to take full advantage of Windows 10 functionality. Windows 10 is automatically updated, which is always enabled. ISP fees may apply and additional requirements may apply over time for updates. See <a href="http://www.microsoft.com">http://www.microsoft.com</a>.
+					</p>
+				</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+ 	$(".tab-sub").click(function(){
+ 		$(".tab-sub").removeClass("active");
+ 		$(this).addClass("active");
+ 		console.log($(this).attr("id"));
+ 		if($(this).attr("id") === "tab-1"){
+ 			$(".tab-blocks").removeClass("active");
+ 			$("#tab1-content").addClass("active");
+ 		}
+ 		else if($(this).attr("id") === "tab-2"){
+ 			$(".tab-blocks").removeClass("active");
+ 			$("#tab2-content").addClass("active");
+ 		}
+ 		else if($(this).attr("id") === "tab-3"){
+ 			$(".tab-blocks").removeClass("active");
+ 			$("#tab3-content").addClass("active");
+ 		}
+ 		/*else{
+ 			$(".tab-blocks").removeClass("active");
+ 			$("#tab1-content").addClass("active");
+ 		}*/
+ 	});
+ 	$(".play-button").click(function(){
+ 		$(".video-iframe").addClass("click");
+ 		$(".play-button").addClass("hidden");
+ 		$(".video-iframe").attr("src", "https://www.youtube.com/embed/IBnf_lHxPdE?rel=0&autoplay=1");
+ 	});
+ 	document.getElementById('play-button1').addEventListener('touchstart', function(ev) { 
+ 		$(".video-iframe").attr("src","");     
+ 		if (ev.touches.item(0) == ev.targetTouches.item(0)){
+ 			$(".video-iframe").addClass("click");
+ 			$(".play-button").addClass("hidden");
+ 			$(".video-iframe").attr("src", "https://www.youtube.com/embed/IBnf_lHxPdE?rel=0&autoplay=1");
+ 		}
+ 	});
+</script>
+<script>
+ $(function(){
+        fixViewport();
+    });
+
+  function fixViewport() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width, //get proper width
+                mw = 400, // min width of site
+                ratio =  Math.round((ww/mw)*100)/100, //calculate ratio
+                vp = 'initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, width=' + ww;
+            if( ww < mw){ //smaller than minimum size
+                vp = 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww;
+            }
+            $('#Viewport').attr('content', vp);
+        }
+    }
+</script>
+</body>
+</html>

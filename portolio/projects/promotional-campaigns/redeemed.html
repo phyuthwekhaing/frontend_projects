@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<title>Great News for Asia Miles member!</title>
+<script src="css_browser_selector.js" type="text/javascript"></script>
+</head>
+<body>
+<link rel="Stylesheet" type="text/css" href="css/HPExperience.1.4.css" />
+<link rel="Stylesheet" type="text/css" href="css/v3-landing.css" />
+<link type="text/css" rel="Stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/header.min.css" />
+<link rel="stylesheet" href="http://h20386.www2.hp.com/SingaporeStore/html/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/hps-fontface-remove.css"/>
+<style>
+/* -webkit- */
+@-webkit-keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes slideIn{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(-200px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+}
+@-webkit-keyframes sizeDownMove{
+	0%{
+		-webkit-transform: scale(1);
+		left: 100px;
+	}
+	100%{
+		-webkit-transform: scale(0.6);
+		left: 0px;
+	}
+}
+@-webkit-keyframes fromBack{
+	0%{
+		-webkit-transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+/* -moz- */
+@-moz-keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-moz-keyframes fadeIn{
+	0%{
+		opacity: 0;
+		
+	}
+	50%{
+		opacity: 0.5;
+
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes slideIn{
+	0%{
+		opacity: 0;
+		-moz-transform: translateX(-200px);
+	}
+	100%{
+		opacity: 1;
+		-moz-transform: translateX(0px);
+	}
+}
+@-moz-keyframes sizeDownMove{
+	0%{
+		-moz-transform: scale(1);
+		left: 100px;
+	}
+	100%{
+		-moz-transform: scale(0.6);
+		left: 0px;
+	}
+}
+@-moz-keyframes fromBack{
+	0%{
+		-moz-transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		-moz-transform: scale(1);
+		opacity: 1;
+	}
+}
+/**/
+@keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes slideIn{
+	0%{
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes sizeDownMove{
+	0%{
+		transform: scale(1);
+		left: 100px;
+	}
+	100%{
+		transform: scale(0.6);
+		left: 0px;
+	}
+}
+@keyframes fromBack{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.sp-content {
+	z-index: 100;
+	-webkit-animation: fromBack 0.9s ease-in-out 1s backwards;
+	-moz-animation: fromBack 0.9s ease-in-out 1s backwards;
+	-ms-animation: fromBack 0.9s ease-in-out 1s backwards;
+	animation: fromBack 0.9s ease-in-out 1s backwards;
+}
+.earn-up-img{
+	z-index: 100;
+	-webkit-animation: fadeIn 2s ease-in-out 3s backwards;
+	-moz-animation: fadeIn 2s ease-in-out 3s backwards;
+	-ms-animation: fadeIn 2s ease-in-out 3s backwards;
+	animation: fadeIn 2s ease-in-out 3s backwards;
+}
+.content-left{
+	z-index: 100;
+	-webkit-animation: fadeIn 2s ease-in-out 4s backwards;
+	-moz-animation: fadeIn 2s ease-in-out 4s backwards;
+	-ms-animation: fadeIn 2s ease-in-out 4s backwards;
+	animation: fadeIn 2s ease-in-out 4s backwards;
+}
+.content-right{
+	z-index: 100;
+	-webkit-animation: fadeIn 2s ease-in-out 5s backwards;
+	-moz-animation: fadeIn 2s ease-in-out 5s backwards;
+	-ms-animation: fadeIn 2s ease-in-out 5s backwards;
+	animation: fadeIn 2s ease-in-out 5s backwards;
+}
+#notebook-offer{
+	opacity: 0;
+}
+#notebook-offer.animated{
+	opacity: 1;
+	z-index: 100;
+	-webkit-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-moz-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-ms-animation: slideIn 2s ease-in-out 0.2s backwards;
+	animation: slideIn 2s ease-in-out 0.2s backwards;
+}
+#ink-offer{
+	opacity: 0;
+}
+#ink-offer.animated{
+	opacity: 1;
+	z-index: 100;
+	-webkit-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-moz-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-ms-animation: slideIn 2s ease-in-out 0.2s backwards;
+	animation: slideIn 2s ease-in-out 0.2s backwards;
+}
+#printer-offer{
+	opacity: 0;
+}
+#printer-offer.animated{
+	opacity: 1;
+	z-index: 100;
+	-webkit-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-moz-animation: slideIn 2s ease-in-out 0.2s backwards;
+	-ms-animation: slideIn 2s ease-in-out 0.2s backwards;
+	animation: slideIn 2s ease-in-out 0.2s backwards;
+}
+#hero-banner{
+	background: url(images/hero-background.jpg) no-repeat center center;
+	min-height: 1078px;
+}
+.earn-up-img{
+	max-width: 589px;
+	padding-top: 20px;
+	margin-left: 0px;
+}
+.earn-up-img-wrap{
+	max-width: 649px;
+	margin: 0 auto;
+}
+.main-wrapp img{
+	width: 100%;
+	max-width: 100%;
+}
+.text-content-hero{
+	max-width: 1050px;
+	padding: 20px;
+	margin: 0 auto;
+}
+.content-left{
+	width: 55%;
+	width: calc((100% - 40px ) * 0.54 );
+	float: left;
+	margin-right: 40px;
+}
+.content-right{
+	width: 36%;
+    width: calc((100% - 40px ) * 0.46 );
+    float: left;
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+#hero-banner h1{
+	font-size: 48px;
+	font-weight: 700;	
+}
+#hero-banner .notes{
+	font-size: 15px;
+	color: #000000;
+}
+#hero-banner p{
+	font-size: 20px;
+	color: #243038;
+}
+.td-header{
+	background: #243038;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.td-customers{
+	background: #fbab00;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 130px;
+	text-align: center;
+	border: 1px solid #48c7f8;
+	border-left: none;
+
+}
+td.td-customers:last-of-type{
+	border-right: none;
+}
+.cta-wrap{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+a.cta-org-btn{
+	padding: 10px 30px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #d7410b;
+	text-decoration: none;
+	border-radius: 5px 0px;
+}
+a.cta-org-btn:hover{
+	background: #c14d1a;
+	color: #ffffff;
+	text-decoration: none;
+}
+.additionally{
+	padding: 20px 20px;
+}
+.additionally h1{
+	font-size: 48px;
+	text-align: center;
+	line-height: 1em;
+	margin-bottom: 0px;
+}
+.additionally h3{
+	font-size: 35px;
+	text-align: center;
+	line-height: 1em;
+	margin-top: 0px;
+}
+#notebook-offer{
+	background: url(images/spectre.png);
+	min-height: 189px;
+}
+#ink-offer{
+	background: #86cd40;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+#printer-offer{
+	background: url(images/printer-hero.png)no-repeat top center #18b7f9;
+	min-width: 189px;
+}
+#ink-offer .left-text{
+	max-width: 400px;
+	float: left;
+}
+#notebook-offer .text-content, #ink-offer .text-content, #printer-offer .text-content{
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.text-content{
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 20px;
+}
+#notebook-offer h1, #printer-offer h1{
+	font-size: 65px;
+	color: #ffffff;
+	padding-top: 20px;
+}
+#printer-offer h1{
+	padding-top: 0px;
+}
+#ink-offer h1{
+	font-size: 31px;
+	padding-top: 20px;
+}
+#notebook-offer p, #ink-offer p, #printer-offer p{
+	font-weight: 300;
+	font-size: 28px;
+	color: #ffffff;
+}
+.mobile-only{
+	display: none;
+}
+#laptop-prds{
+	max-width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.column-1pi2{
+	width: 47%;
+	width: calc((100% - 30px) / 2);
+	margin-right: 30px;
+	float: left;
+}
+.column-1pi2:last-of-type{
+	margin-right: 0px;
+}
+.prd-wrap{
+	width: 100%;
+	margin-top: 5px;
+}
+#omen-prd{
+	background: url(images/oman.png)no-repeat top left;
+	min-height: 426px; 
+}
+#hp14-prd{
+	background: url(images/hp14.png)no-repeat top left;
+	min-height: 426px;
+}
+.text-prd{
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+.messaging{
+	font-size: 19px;
+	color: #243038;
+}
+.text-prd h3{
+	font-size: 27px;
+	font-weight: bold;
+	margin: 0px;
+}
+.text-prd p{
+	font-size: 16px;
+	font-weight: 300;
+}
+p.pricing, span.pricing{
+	margin-top: 70px;
+	color: #d7410b;
+	font-size: 40px;
+}
+p.pricing sup{
+	color: #d7410b;
+	vertical-align: text-top;
+	margin-top: 10px;
+}
+a.cta-blue-btn{
+	font-size: 20px;
+	background: #0098d7;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+a.cta-blue-btn:hover, a.cta-blue-btn:active, a.cta-blue-btn:focus{
+	text-decoration: none;
+	color: #ffffff;
+	background: #0084BD;
+}
+.prd-1pi2{
+	width: 48%;
+	width: calc((100% - 21px)/2);
+	border-top: 1px solid #cdcdcd;
+	border-right : 1px solid #cdcdcd;
+	float: left;
+	padding-top: 10px;
+	display: inline-block;
+}
+.prd-1pi3{
+	width: 30%;
+	width: calc(((100% - 38px)/3) + 16px);
+	border-top: 1px solid #cdcdcd;
+	border-right : 1px solid #cdcdcd;
+	float: left;
+	padding-top: 10px;
+	display: inline-block;
+	padding-left: 20px;
+}
+.prd-1pi3:first-of-type{
+	padding-left: 0px;
+	width: 33%;
+	width: calc((100% - 38px)/3);
+}
+.prd-1pi3:last-of-type{
+	border-right: none;
+	width: 33%;
+	width: calc(((100% - 38px)/3) + 16px);
+}
+.prd-1pi2:last-of-type{
+	border-right: none;
+	padding-left: 20px;
+	width: 48%;
+	width: calc(((100% - 21px)/2) + 20px);
+}
+.prd-1pi2 p, .prd-1pi3 p{
+	font-size: 14px;
+	font-weight: normal;
+}
+.prd-1pi2 p.pricing,.prd-1pi2 span.pricing{
+	margin-top: 20px;
+	font-size: 35px;
+}
+.prd-1pi3 p.pricing, .prd-1pi3 span.pricing{
+	margin-top: 0px;
+	font-size: 35px;
+}
+.prd-1pi2 ul, .prd-1pi3 ul{
+	list-style: disc;
+	margin-left: 10px;
+	line-height: 1.2em;
+}
+#folio-prd{
+	background: url(images/background.png) no-repeat top left;
+	min-height: 488px;
+	height: 488px;
+}
+#folio-prd .text-prd, #elitex2-prd .text-prd{
+	padding-top: 0px;
+}
+#folio-prd h3, #elitex2-prd h3{
+	padding-bottom: 10px;
+}
+#elitex2-prd{
+	background: url(images/elite-x2-bg.png)no-repeat top left;
+	min-height: 488px;
+	height: 488px;
+}
+.column-1pi2{
+	min-width: 584px;
+}
+.row{
+	margin: 0 auto;
+}
+#pagewide h1, #ink-jet h1, #laser-jet300 h1, #laser-jet500 h1{
+	font-size: 60px;
+	font-weight: 300;
+	color: #018aff;
+	float :left;
+}
+.col-1pi5{
+	width: 18%;
+	width: calc((100% - 40px) / 5);
+	float: left;
+	margin-right: 10px;
+	border-radius : 5px;
+	background: #f1f1f1;
+	padding: 20px;
+	margin-top: 10px;
+	min-width: 232px;
+}
+.col-1pi5:last-of-type{
+	margin-right: 0px;
+}
+#pagewide .col-1pi5{
+	padding: 10px;
+}
+.col-1pi4{
+	width: 23%;
+	width: calc((100% - 30px) / 4);
+	float: left;
+	margin-right: 10px;
+	border-radius : 5px;
+	background: #f1f1f1;
+	padding: 20px;
+	margin-top: 10px;
+	min-width: 232px;
+}
+.col-1pi4:last-of-type{
+	margin-right: 0px;
+}
+#pagewide h3, #ink-jet h3, #laser-jet300 h3, #laser-jet500 h3{
+	font-size: 22px;
+	font-weight: bold;
+}
+#pagewide p.pricing,#pagewide span.pricing{
+	font-size: 35px;
+	margin-top: 0px;
+}
+#ink-jet .prd-1pi2 {
+    border: none;
+    padding: 20px;
+}
+#ink-jet #pro8710-prd{
+	background: #f1f1f1;
+}
+#laser-jet300 p.pricing, #laser-jet500 p.pricing, #laser-jet300 span.pricing, #laser-jet500 span.pricing{
+	margin-top: 0px;
+}
+#terms-and-conditions p{
+	font-size: 12px;
+	color: #767676;
+}
+@media (max-width: 1050px){
+	.content-left, .content-right{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+	#hero-banner{
+		background: url(images/hero-background.jpg)no-repeat top center;
+	}
+	.earn-up-img{
+		padding-top: 0px;
+	}
+	.content-right{
+		margin-top: 380px;
+		padding: 0px;
+	}
+
+}
+@media (max-width: 896px){
+	img.mobile-only{
+		display: block;
+		max-width: 400px;
+		width: 100%;
+	}
+	#notebook-offer{
+		background: #febe0f;
+	}
+	.column-1pi2, .column-1pi2:last-of-type{
+		max-width: 586px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.no-mobile{
+		display: none;
+	}
+	.column-1pi2{
+		min-width: 0px;
+	}
+
+}
+@media (max-width: 769px){
+	.content-right{
+		margin-top: 480px;
+	}
+}
+@media (max-width: 586px){
+	.prd-1pi2,.prd-1pi3, .prd-1pi3:first-of-type, .prd-1pi3:last-of-type, .prd-1pi2:last-of-type{
+		width: 100%;
+		background: #f1f1f1;
+		border : 1px solid #cdcdcd;
+		padding-left: 30px;
+		padding-bottom: 30px;
+	}
+	#folio-prd{
+		min-height: 770px;
+	}
+	.text-prd{
+		padding-left: 0px;
+	}
+	#elitex2-prd{
+		background: url(images/elite-x2-bg.png)no-repeat bottom left;
+	}
+	#omen-prd, #hp14-prd{
+		padding: 20px;
+	}
+	#folio-prd h3, #elitex2-prd h3{
+		padding-left: 20px;
+	}
+	.col-1pi5, .col-1pi5:last-of-type, .col-1pi4, .col-1pi4:last-of-type{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+		margin-top: 30px;
+	}
+	#printer-offer .text-content {
+	    background: rgba(0,0,0,0.5);
+	}
+	.content-right{
+		margin-top: 400px;
+	}
+	
+
+}
+@media (max-width: 361px){
+	.content-right{
+		margin-top: 340px;
+	}
+}
+</style>
+
+		
+
+<div class="main-wrapp">
+	<div id="hero-banner" class="sp-content">
+		<div class="earn-up-img-wrap">
+			<div class="earn-up-img">
+			 	<img src="images/earn-up-to.png"/>
+			</div>
+		</div>
+		<div class="text-content-hero">
+			<div class="content-left">
+				<h1>Thank you<br/> for your support!</h1>
+				<p>You can continue to earn Asia Miles by purchasing 
+the participating products listed below.</p>
+				<!-- <p>What's more, if you're one of the first 500 customers to 
+				purchase an eligible product, you'll earn an extra 500 miles!</p>
+				<img src="images/air-miles.png" style="max-width: 426px;margin-top: 20px; margin-bottom: 20px;"/>
+				<p class="notes">^ Members are required to input Asia miles membership number 
+	   			upon checkout to enjoy this offer.</p>
+	   			<p>Not yet an Asia Miles member? <a href="https://www.asiamiles.com/am/en/about/join?WAright=JoinNow" target="_blank">Join now</a>!</p> -->
+	   		</div>
+	   		<div class="content-right">
+	   			<table style="width: 100%; max-width: 400px; margin: 0 auto;">
+	   				<tr>
+	   					<td colspan="3" class="td-header"> <font>We have served</font></td>
+	   				</tr>
+	   				<tr>
+	   					<td class="td-customers"><font>5</font></td>
+	   					<td class="td-customers"><font >0</font></td>
+	   					<td class="td-customers"><font>0</font></td>
+	   				</tr>
+	   				<tr>
+	   					<td colspan="3" class="td-header"> <font>CUSTOMERS</font></td>
+	   				</tr> 
+	   				<tr>
+	   					<td colspan="3" class="cta-wrap"><a href="#" class="cta-org-btn" id="scroll-and-shop">Shop now</a> </td>
+	   				</tr>
+	   			</table>
+	   		</div>
+		</div>
+	</div>
+	<div class="additionally">
+		<h1>Additionally, </h1>
+		<h3>earn Asia Miles for purchases of eligible products!</h3>
+	</div>
+	<div id="notebook-offer">
+		<div class="text-content">
+			<div class="left-text">
+				<h1>Notebook <font style="font-weight: 300;">Offers</font></h1>
+				<p> Earn up to 7000 Asia Miles.</p>
+				<img src="images/elitebook.png" class="mobile-only"/>
+			</div>
+		</div>
+	</div>
+	<div id="laptop-prds" class="row">
+		<div style="width: 100%;">
+			<div class="column-1pi2">
+				<img src="images/earn7000.png" style="max-width: 244px;"/>
+				<div class="prd-wrap">
+					<div id="omen-prd">
+						<div class="text-prd">
+							<p class="messaging">Limited to 3 units only!</p>
+							<h3>HP OMEN 15-5202TX </h3>
+							<p>SKU: P4X19PA#AB5</p>
+							<p style="max-width: 200px;">Take on the competition anytime, anywhere with the high-performance HP OMEN Notebook. </p>
+							<p class="pricing"><sup>HK$</sup><span data-price-min="P4X19PA#AB5" class="pricing">18,999</span></p>
+							<p style="margin-top: 20px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=P4X19PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column-1pi2">
+				<img src="images/earn2000.png" style="max-width: 193px;"/>
+				<div class="prd-wrap">
+					<div id="hp14-prd">
+						<div class="text-prd">
+							<h3>HP 14-ac133TX<br/>
+							(White Silver) </h3>
+							<p>SKU: T0Y76PA#AB5</p>
+							<p style="max-width: 200px;">Get the perfect combination of style and productivity, while keeping your wallet in mind - now that's something to get excited about. </p>
+							<p class="pricing"><sup>HK$</sup><span data-price-min="T0Y76PA#AB5" class="pricing">5,499</span></p>
+							<p style="margin-top: 20px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=T0Y76PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 100%; padding-top: 20px;">
+			<div class="column-1pi2">
+				<img src="images/earn1000miles.png" style="max-width: 193px; margin-top: 20px;"/>
+				<div class="prd-wrap">
+					<div id="folio-prd">
+						<img src="images/hpelite.png" style="max-width: 246px;margin: 10px;"/>
+						<div class="text-prd">
+							<h3>HP EliteBook Folio G1 Notebook PC</h3>
+							<div class="prd-1pi2">
+								<p>SKU: W5S13PA#AB5</p>
+								<ul>
+									<li>Intel&reg; Core&trade; m5 processor </li>
+									<li>Windows 10 Pro 64</li>
+									<li>12.5" diagonal FHD UWVA anti-glare 
+	   								ultra slim LED-backlit (1920 x 1080) LW</li>
+	   							</ul>
+								<p class="pricing"><sup>HK$</sup><span data-price-min="W5S13PA#AB5" class="pricing">11,800</span></p>
+								<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=W5S13PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+							</div>
+							<div class="prd-1pi2">
+								<p>SKU: W5S14PA#AB5</p>
+								<ul>
+									<li>Intel&reg; Core&trade; m5 processor </li>
+									<li>Windows 10 Pro 64</li>
+									<li>12.5" diagonal UHD UWVA ultra-slim 
+	   								LED-backlit <b>touch screen</b> (3840 x 2160)</li>
+	   							</ul>
+								<p class="pricing"><sup>HK$</sup><span data-price-min="W5S14PA#AB5" class="pricing">13,800</span></p>
+								<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=W5S14PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column-1pi2">
+				<div style="height: 71px; margin-top: 20px;" class="no-mobile"></div>
+				<div class="prd-wrap">
+					<div id="elitex2-prd">
+						<img src="images/elite-x2.png" style="max-width: 261px;margin: 10px;"/>
+						<div class="text-prd">
+							<h3>HP Elite x2 1012 2-in-1</h3>
+							<div class="prd-1pi3">
+								<p>SKU: T9S51PA#AB5</p>
+								<ul>
+									<li>Intel&reg; Core&trade; m7 processor</li>
+									<li>Windows 10 Pro 64</li>
+									<li>8 GB LPDDR3-1866 SDRAM</li>
+									<li>256 GB SATA SSD</li>
+	   							</ul>
+								<p class="pricing" style="margin-top: 27px;"><sup>HK$</sup><span data-price-min="T9S51PA#AB5" class="pricing">12,788</span></p>
+								<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=T9S51PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+							</div>
+							<div class="prd-1pi3">
+								<p>SKU: T9S53PA#AB5</p>
+								<ul>
+									<li>Intel&reg; Core&trade; m7 processor</li>
+									<li>Windows 10 Pro 64</li>
+									<li>8 GB LPDDR3-1866 SDRAM</li>
+									<li>256 GB SATA SSD</li>
+									<li>4G LTE</li> 
+	   							</ul>
+								<p class="pricing"><sup>HK$</sup><span data-price-min="T9S53PA#AB5" class="pricing">13,788</span></p>
+								<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=T9S53PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+							</div>	
+							<div class="prd-1pi3">
+								<p>SKU: V1M39PA#AB5</p>
+								<ul>
+									<li>Intel&reg; Core&trade; m7 processor</li>
+									<li>Windows 10 Pro 64</li>
+									<li>8 GB LPDDR3-1866 SDRAM</li>
+									<li>512 GB SATA SSD</li>
+									<li>4G LTE</li> 
+	   							</ul>
+								<p class="pricing"><sup>HK$</sup><span data-price-min="V1M39PA#AB5" class="pricing">15,788</span></p>
+								<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=V1M39PA%23AB5&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ink-offer" class="row">
+		<div class="text-content">
+			<div class="left-text">
+				<h1><b>Earn 1 Asia Mile for every HK$8</b><br/>
+				spent on all HP ink and toner</h1>
+				<img src="images/equation.png" style="max-width: 292px; margin-top: 30px; margin-bottom: 30px;"/>
+				<img src="images/ink-hero.png" class="mobile-only"/>
+				<p style="margin-top: 0px;"><a href="http://www.hpdirect.com.hk/s/store/indv/en_US/itf/prod.vert?type=ink" class="cta-blue-btn" target="_blank">Shop now</a></p>
+			</div>
+			<img src="images/ink-hero.png" class="no-mobile" style="float: right;max-width: 772px; margin-top: 20px; margin-right: -100px;"/>
+		</div>
+	</div>
+	<div id="printer-offer">
+		<div class="text-content">
+			<div class="left-text">
+				<h1>Printer <font style="font-weight: 300;">Offers</font></h1>
+				<p> Earn up to 500 Asia Miles.</p>
+			</div>
+		</div>
+	</div>
+	<div id="pagewide">
+		<div class="text-content">
+			<div class="row">
+			<img src="images/new.png" style="float: left; max-width:153px;"/><h1>Pagewide Technology</h1><img src="images/earn500miles.png" style="float: left; max-width:148px; margin-top: 10px; margin-left: 10px;"/>
+			</div>
+			<div class="row">
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/pagewide452dw.png" style="max-width: 262px;"/>
+					</div>
+					<h3>Pagewide Pro 452dw</h3>
+					<p>SKU: D3Q16D</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="D3Q16D" class="pricing">4,188</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D3Q16D&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/pagewide477dw.png" style="max-width: 193px;"/>
+					</div>
+					<h3>Pagewide Pro 477dw</h3>
+					<p>SKU: D3Q20D</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="D3Q20D" class="pricing">5,788</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D3Q20D&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/pagewide552dw.png" style="max-width: 204px;"/>
+					</div>
+					<h3>Pagewide Pro 552dw</h3>
+					<p>SKU: D3Q17D</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="D3Q17D" class="pricing">4,888</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D3Q17D&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/pagewide452dw.png" style="max-width: 196px;"/>
+					</div>
+					<h3>Pagewide Pro 577dw</h3>
+					<p>SKU: D3Q20D</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="D3Q20D" class="pricing">6,588</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D3Q20D&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px; max-width: 93px; margin: 0 auto;">
+						<img src="images/pagewide577z.png" style="max-width: 93px;"/>
+					</div>
+					<h3>Pagewide Pro 577z</h3>
+					<p>SKU: K9Z76D</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="K9Z76D" class="pricing">9,588</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=K9Z76D&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ink-jet">
+		<div class="text-content row">
+			<div class="row">
+			<h1>InkJet</h1><img src="images/earn300.png" style="float: left; max-width:150px; margin-top: 10px; margin-left: 10px;"/>
+			</div>
+			<div class="column-1pi2">
+				<div class="prd-wrap">
+					<div id="pro8710-prd" class="row">
+						<div class="prd-1pi2">
+							<h3>HP Officejet Pro 8710 All-in-One Printer</h3>
+							<p>SKU: D9L18A</p>
+							<p class="pricing"><sup>HK$</sup><span data-price-min="D9L18A" class="pricing">1,988</span></p>
+							<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D9L18A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+						</div>
+						<div class="prd-1pi2">
+							<img src="images/officejet8710.png" style="max-width: 280px; margin-top: 20px;"/>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="column-1pi2">
+				<div class="prd-wrap">
+					<div id="pro8710-prd" class="row">
+						<div class="prd-1pi2">
+							<h3>HP Officejet Pro 8720 All-in-One Printer</h3>
+							<p>SKU: D9L19A</p>
+							<p class="pricing"><sup>HK$</sup><span data-price-min="D9L19A" class="pricing">2,488</span></p>
+							<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=D9L19A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+						</div>
+						<div class="prd-1pi2">
+							<img src="images/officejet8720.png" style="max-width: 223px; margin-top: 20px;"/>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="laser-jet300">
+		<div class="text-content">
+			<div class="row">
+			<h1>LaserJet</h1><img src="images/earn300.png" style="float: left; max-width:150px; margin-top: 10px; margin-left: 10px;"/>
+			</div>
+			<div class="row">
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/laserjet225dn.png" style="max-width: 262px;"/>
+					</div>
+					<h3>HP LaserJet Pro MFP M225dn</h3>
+					<p>SKU: CF484A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="CF484A" class="pricing">2,588</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=CF484A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/laserjet225dw.png" style="max-width: 193px;"/>
+					</div>
+					<h3>HP LaserJet Pro MFP M225dw</h3>
+					<p>SKU: CF485A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="CF485A" class="pricing">2,988</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=CF485A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/laserjet177fw.png" style="max-width: 204px;"/>
+					</div>
+					<h3>HP Color LaserJet Pro MFP M177fw</h3>
+					<p>SKU: CZ165A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="CZ165A" class="pricing">2,988</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=CZ165A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/laserjet277dn.png" style="max-width: 196px;"/>
+					</div>
+					<h3>HP Color LaserJet Pro MFP M277dn</h3>
+					<p>SKU: B3Q10A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="B3Q10A" class="pricing">3,988</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=B3Q10A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi5">
+					<div style="min-height:200px;">
+						<img src="images/laserjet277dn.png" style="max-width: 196px;"/>
+					</div>
+					<h3>HP Color LaserJet Pro MFP M277dw</h3>
+					<p>SKU: B3Q11A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="B3Q11A" class="pricing">4,688</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=B3Q11A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="laser-jet500">
+		<div class="text-content">
+			<div class="row">
+			<h1>LaserJet</h1><img src="images/earn500miles.png" style="float: left; max-width:150px; margin-top: 10px; margin-left: 10px;"/>
+			</div>
+			<div class="row">
+				<div class="col-1pi4">
+					<div style="min-height:200px; max-width: 214px; margin: 0 auto; margin-top: 20px;">
+						<img src="images/laserjet426fdw.png" style="max-width: 214px;"/>
+					</div>
+					<h3>HP LaserJet Pro MFP M426fdn </h3>
+					<p>SKU: F6W14A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="F6W14A" class="pricing">4,988</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=F6W14A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi4">
+					<div style="min-height:200px; max-width: 214px; margin: 0 auto; margin-top: 20px;">
+						<img src="images/laserjet426fdw.png" style="max-width: 214px;"/>
+					</div>
+					<h3>HP LaserJet Pro MFP M426fdw</h3>
+					<p>SKU: F6W15A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="F6W15A" class="pricing">5,388</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=F6W15A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi4">
+					<div style="min-height:200px; max-width: 174px; margin: 0 auto; margin-top: 20px;">
+						<img src="images/laserjet477fnw.png" style="max-width: 174px;"/>
+					</div>
+					<h3>HP Color LaserJet Pro MFP M477fnw</h3>
+					<p>SKU: CF377A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="CF377A" class="pricing">6,388</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=CF377A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+				<div class="col-1pi4">
+					<div style="min-height:200px; max-width: 174px; margin: 0 auto; margin-top: 20px;">
+						<img src="images/laserjet477fdw.png" style="max-width: 174px;"/>
+					</div>
+					<h3>HP Color LaserJet Pro MFP M477fdw</h3>
+					<p>SKU: CF379A</p>
+					<p class="pricing"><sup>HK$</sup><span data-price-min="CF379A" class="pricing">6,988</span></p>
+					<p style="margin-top: 10px;"><a href="http://www.hpdirect.com.hk/s/store/hpshopnow?pid=CF379A&lang=en_US" class="cta-blue-btn" target="_blank">Shop now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="terms-and-conditions">
+		<div class="text-content">
+			<p><b>Terms and Conditions</b></p>
+			<p>1)&nbsp;&nbsp;&nbsp;	The Asia Miles offer is only eligible for members in Hong Kong who have input the membership detail at the checkout page upon payment. </p>
+			<p>2)&nbsp;&nbsp;&nbsp;	The Asia Miles offer is only applicable for selected products.</p>
+			<p>3)&nbsp;&nbsp;&nbsp;	The quantity of miles earned will be based on the net spending after discount.</p>
+			<p>4)&nbsp;&nbsp;&nbsp;	The Asia Miles offer will not be awarded for called, returned or refunded orders.</p>
+			<p>5)&nbsp;&nbsp;&nbsp;	Other Asia Miles terms and conditions apply.</p>
+			<p>6)&nbsp;&nbsp;&nbsp;	HP (HK) Online Store (http://www.hpdirect.com.hk) reserves the right to amend any term and conditions.</p>
+			<p><b>Special offer Terms and conditions</b></p>
+			<p>7)&nbsp;&nbsp;&nbsp;	The promotion period is from 6 May to 30 June 2016, inclusive.</p>
+			<p>8)&nbsp;&nbsp;&nbsp;	Bonus Asia Miles will be credited to the member’s account within 6 to 8 weeks after the promotion ends.</p>
+			<p>9)&nbsp;&nbsp;&nbsp;   500 bonus miles can only be earned for the first purchase online with a minimum spend of HKD500 on eligible items in one single transaction.</p>
+			<p>10)&nbsp;&nbsp;	The bonus miles for the first purchase online is only available for the first 500 members. </p>
+			<p>11)&nbsp;&nbsp;	This offer cannot be used in conjunction with any other promotional offers.</p>
+
+			<p>All matters and disputes will be subject to the final decision of HP (HK) Online Store.
+			To ensure you receive our emails, please add <a href="mailto:crm-ccm.ap.ipg@newsgram.hp.com" target="_blank">crm-ccm.ap.ipg@newsgram.hp.com </a>to your address book.
+			HP respects your privacy. HP uses automatic data collection tools to personalize your experience. If you'd like to discontinue receiving e-mails from HP regarding special offers and information, please <a href="https://pages.hpnews.hp.com/apj/unsub_email_update?sub=D75018686E7F275C00DFD3438D08A745&country=HK&language=EN" target="_blank">click here</a>.</p>
+
+			<p>For more information regarding HP's privacy policies and practices, please visit our <a href="http://www8.hp.com/hk/en/privacy/privacy.html" target="_blank">Privacy Statement</a>.
+			Please do not reply to this email as it is from an unmonitored mailbox. We value your opinions. If you have comments or questions about our Privacy Statement, any concerns or a complaint regarding our collection and use of your data or a possible breach of your privacy, please send please contact us <a href="http://www8.hp.com/hk/en/contact-hp/contact.html" target="_blank">here</a> or call us at 852 3070 6688 or write to us at the appropriate address below:<br/>
+			HP Inc Hong Kong Limited <br/>
+			25/F, Cityplaza One. 1111 King's Road. Taikoo Shing, Hong Kong <br/>
+			&copy; Copyright 2016 HP Development Company, L.P. The information contained herein is subject to change without notice</p>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+<script>
+    var notebook = $('#notebook-offer').offset().top;
+    var ink      = $('#ink-offer').offset().top;
+    var printer  = $('#printer-offer').offset().top;
+    $(document).on('scroll',function(){
+      if($(document).scrollTop() +800 > notebook){
+        $('#notebook-offer').addClass('animated');
+      }
+      if($(document).scrollTop() +800 > ink){
+        $('#ink-offer').addClass('animated');
+      }
+      if($(document).scrollTop() +800 > printer){
+        $('#printer-offer').addClass('animated');
+      }
+    });
+</script>
+<script>
+  $('#scroll-and-shop').click(function(){
+       $('html, body').animate({scrollTop:$('#laptop-prds').position().top}, 'slow');
+  });
+</script>
+<script>
+	 $(document).ready(function() {
+	 	 window.parent.autoHeight();
+            $('[data-price-min]').each(function() {
+              $(this).html(window.parent.getPrice( $(this).attr('data-price-min')));
+          });
+      });
+</script>
+</body>
+</html>

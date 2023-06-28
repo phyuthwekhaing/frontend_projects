@@ -1,0 +1,179 @@
+.hp-icon.arrow-left:before {
+    content: "\E906";
+}
+
+.hp-icon.arrow-right:before {
+    content: "\E907";
+}
+
+/* Remove tap highlight on iOS */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hero Navigation Style */
+[data-hero-navigation].hero-navigation {
+    z-index: 7;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+}
+
+[data-hero-navigation].hero-navigation .wrapper {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+[data-hero-navigation] .icons-list {
+    height: 150px;
+    padding: 0;
+    padding-top: 15px;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    list-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+[data-hero-navigation] .icons-list .icon {
+    height: 150px;
+    margin: 0 20px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+[data-hero-navigation] .icons-list .icon a {
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    display: inline-block;
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+[data-hero-navigation] .icons-list .icon a:hover {
+    color: #007dba;
+}
+
+[data-hero-navigation] .icons-list .icon a:hover .hp-icon {
+    color: #007dba;
+}
+
+[data-hero-navigation] .icons-list .icon p {
+    font-family: "HP Simplified","HPSimplified",arial;
+}
+
+[data-hero-navigation] .hp-icon.arrow-left, [data-hero-navigation] .hp-icon.arrow-right {
+    position: absolute;
+    padding:0;
+    width: 40px;
+    height: 120px;
+    color: #5a5a5a;
+    background: rgba(242, 242, 242, 1);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    top: 0;  
+}
+
+[data-hero-navigation] .hp-icon.arrow-left:hover, [data-hero-navigation] .hp-icon.arrow-right:hover {
+    color: #007dba;
+}
+
+[data-hero-navigation] .hp-icon.arrow-left{
+    left: 0;   
+}
+
+[data-hero-navigation] .hp-icon.arrow-right{
+    right: 0;   
+}
+
+[data-hero-navigation] .hp-icon.arrow-left:before, [data-hero-navigation] .hp-icon.arrow-right:before {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+    font-size: 1.5em;
+}
+
+[data-hero-navigation] .hp-icon.arrow-left[data-state="hidden"], [data-hero-navigation] .hp-icon.arrow-right[data-state="hidden"] {
+    visibility: hidden;
+}
+
+[data-hero-navigation] .hp-icon.arrow-left[data-state="visible"], [data-hero-navigation] .hp-icon.arrow-right[data-state="visible"] {
+    visibility: visible;
+}
+
+[data-hero-navigation] .scrolling {
+    visibility: hidden !important;
+}
+/* Hero Navigation: small screens */
+@media only screen and (max-width: 40em) { 
+    [data-hero-navigation].small-overlay{
+        position: absolute;
+        background-color: rgba(242, 242, 242, .8);
+    }
+		[data-hero-navigation].small-overlay .hp-icon.arrow-left, [data-hero-navigation].small-overlay .hp-icon.arrow-right{
+        background: transparent;
+    }
+    [data-hero-navigation].hero-navigation .wrapper{
+        height: 90px;
+      	padding: 0;
+    }
+    [data-hero-navigation].hero-navigation .hp-icon:before, .hp-icons:before {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    [data-hero-navigation] .icons-list {
+        padding-top: 8px;
+    }
+  	[data-hero-navigation] .icons-list .icon:last-child {
+        padding-right: 20px;
+    }
+    [data-hero-navigation] .icons-list .icon p {
+        font-size: 0.875em;
+        line-height: 1.25em;
+    }
+    [data-hero-navigation] .hp-icon.arrow-left, [data-hero-navigation] .hp-icon.arrow-right {
+        height: 90px;
+    }
+
+    [data-hero-navigation] .hp-icon.arrow-left:before, [data-hero-navigation] .hp-icon.arrow-right:before {
+        font-size: 1.37em;
+    }
+}
+
+/* Hero Navigation: medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    [data-hero-navigation].medium-overlay{
+        position: absolute;
+        background-color: rgba(242, 242, 242, .8);
+    }
+  	[data-hero-navigation].medium-overlay .hp-icon.arrow-left, [data-hero-navigation].medium-overlay .hp-icon.arrow-right{
+        background: transparent;
+    }
+}
+
+/* Hero Navigation: large screens */
+@media only screen and (min-width: 64.063em) { 
+    [data-hero-navigation].large-overlay{
+        position: absolute;
+        background-color: rgba(242, 242, 242, .8);
+    }
+  	[data-hero-navigation].large-overlay .hp-icon.arrow-left, [data-hero-navigation].large-overlay .hp-icon.arrow-right {
+        background: transparent;
+    }
+}
+
+/* end Hero Navigation Style */

@@ -1,0 +1,294 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color:#733;
+	color: #ffffff;
+}
+.containerr{
+	width: 100%;
+}
+.text-wrapp{
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+	line-height: 1.2em;
+}
+
+#hero h1{
+	font-size: 42px;
+	font-weight: 300;
+	margin-top: 100px;
+}
+#hero h2{
+	font-size: 32px;
+	font-weight: 300;
+}
+#hero p{
+	font-size: 18px;
+	font-weight: normal;
+}
+/* ==========================================================================
+   Snow Styles
+   ========================================================================== */
+#hero{
+	background: none;
+	background-image: url('../images/s1.png'), url('../images/s2.png'), url('../images/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+/* ==========================================================================
+   Projects Description Styles
+   ========================================================================== */
+.module {  
+  position: relative;
+  overflow: hidden;
+  width: 625px;
+  height: 369px;
+  max-width: 100%;
+}
+.module:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  transition: 0.5s;
+  
+}
+.module.active:before{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+#prd-1 .module:before{
+
+	background: url(../images/smb.jpg) no-repeat center center #633;
+}
+#prd-2 .module:before{
+	background: url(../images/category-laptops.jpg) no-repeat center center #633;
+}
+#prd-3 .module:before{
+	background: url(../images/sprout.jpg) no-repeat center center #633;
+}
+#prd-4 .module:before{
+	background: url(../images/asia-miles.jpg) no-repeat center center #633;
+}
+.module > header , .module > content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  /* background: inherit;
+  background-attachment: fixed; */
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+.module.active > header{
+	opacity: 0;
+	transition: 0.5s;
+}
+.module.active > content{
+	opacity: 1;
+	top: 0;
+	transition: 0.5s;
+}
+.module > content{
+	top: 30px;
+	padding-top: 90px;
+	opacity: 0;
+}
+/* #prd-3 .module > content{
+	padding-top: 30px;
+} */
+
+.module > header::before, .module > content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+ /*  background: inherit; */
+  /* background-attachment: fixed; */
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.module > header::after, .module > content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.module > content::after {
+	background: rgba(0,0,0,0.7);
+}
+.module > header > h3, .module > content > h3 {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.module>header{
+	background: #533;
+}
+ .module > content > p {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+ }
+ a.cta-white-btn{
+ 	padding: 10px 30px;
+ 	border : 1px solid #ffffff;
+ 	color: #ffffff;
+ 	text-decoration: none;
+ 	border-radius: 2px;
+ }
+  a.cta-view-all{
+ 	padding: 10px 30px;
+ 	border : 1px solid #0096d6;
+ 	color: #0096d6;
+ 	text-decoration: none;
+ 	border-radius: 2px;
+ }
+ a.cta-white-btn:hover{
+ 	background: #ffffff;
+ 	color: #d33;
+ }
+
+
+ /* ==========================================================================
+   Header styles
+   ========================================================================== */
+.header {
+	position: fixed;
+	z-index: 30;
+	width: 100%;
+	background-color:#533;
+}
+a.nav-link{
+	padding: 10px 10px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+}
+a.nav-link:hover{
+	color: #933;
+	background: #fff;
+	text-decoration: none;
+}
+.header .topbar {
+	margin-bottom: 15px;
+	padding: 5px 0;
+	color: #fff;
+}
+.hero-logo:hover{
+	text-decoration: none;
+	color: #f9f9f9;
+}
+.nav-pills>li>a {
+  border-color: lightgrey;
+  border-style: solid;
+}
+
+.header .topbar .title {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.header .navbar-inner {
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	filter: none;
+}
+img.logo{
+  margin-bottom:10px;
+}
+
+.header .navbar-inner .nav {
+	margin-top: 10px;
+}
+
+.header .dropdown-toggle {
+	color: #657983;
+}
+
+.header .dropdown.open .dropdown-toggle {
+	background-color: transparent !important;
+}
+
+.header .dropdown-toggle .brand-color {
+	text-transform: uppercase;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+ @media (max-width: 1050px){
+	.text-wrapp{
+		padding: 20px;
+	}
+ }
+ @media(max-width: 769px){
+ 	.no-mobile{
+ 		display: none;
+ 	}
+ 	.header{
+	padding-left: 20px;
+}
+ }

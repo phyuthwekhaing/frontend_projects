@@ -1,0 +1,2707 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/hps-fontface-remove.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="http://h20387.www2.hp.com/SingaporeStore/Html/assets/css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-star" viewBox="0 0 896 1024">
+          <title>star</title>
+          <path class="path1" d="M896 384l-313.5-40.781-134.5-279.219-134.531 279.219-313.469 40.781 230.469 208.875-59.469 303.063 277-148.812 277.062 148.812-59.562-303.063 230.5-208.875z"></path>
+        </symbol>
+        <symbol id="icon-checkmark" viewBox="0 0 1024 1024">
+          <title>check</title>
+          <path class="path1" d="M896 213.333q18.333 0 30.5 12.167t12.167 30.5q0 18-12.333 30.333l-512 512q-12.333 12.333-30.333 12.333t-30.333-12.333l-256-256q-12.333-12.333-12.333-30.333 0-18.333 12.167-30.5t30.5-12.167q18 0 30.333 12.333l225.667 226 481.667-482q12.333-12.333 30.333-12.333z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <div id="preloader">
+      <img src="images/i-hover.png" width="1" height="1" />
+    </div>
+    <div class="contain-blk">
+    <div id="hero-blk">
+      <div class="row" style="background: #f1f1f1;">
+        <div class="col-md-9 col-sm-12 col-xs-12" id="left-banner">
+          <div class="text-container">
+            <!--  <img src="images/hp-white-logo.png"/> -->
+            <h3>BUSINESS SOLUTIONS FROM HP</h3>
+            <h1>The right technology to grow your business</h1>
+            <div id="green-circle">
+              <h2>
+                TAX deduction <br/>$20,000<!--  <sup>*</sup> -->
+              </h2>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Qualifying businesses are now able to take advantage of the tax deductions announced in the Federal Budget for equipment valued at less than $20,000. Click to find out more." class="custom-tooltip only-desktop" href="https://www.ato.gov.au/general/new-legislation/in-detail/direct-taxes/income-tax-for-businesses/small-business---expanding-accelerated-depreciation/" target="_blank">
+                <div class="icon-1">
+                </div>
+              </a>
+              <a data-toggle="tooltip" data-placement="bottom" data-original-title="Qualifying businesses are now able to take advantage of the tax deductions announced in the Federal Budget for equipment valued at less than $20,000. Click to find out more." class="custom-tooltip only-mobile" href="https://www.ato.gov.au/general/new-legislation/in-detail/direct-taxes/income-tax-for-businesses/small-business---expanding-accelerated-depreciation/" target="_blank">
+                <div class="icon-1">
+                </div>
+              </a>
+            </div>
+            <div class="icon-group">
+              <img src="images/windows10.png" id="win10"/>
+              <img src="images/intel-logo.png" id="intel-logo"/>
+              <div id="text-intel" >
+                <p>Intel Inside&reg;. <br/>Extraordinary Performance Outside.<br/> Powered by Intel&reg; Core&trade; Processors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 right-top-banner">
+          <div id="right-top-banner">
+            <div class="text-wrap">
+              <h2>Build your own PC</h2>
+              <h1>1300 725 018</h1>
+              <p>Call our agents to configure<br/> according to your needs</p>
+              <div id="business-hours">
+                <p>Business Hours<br/>
+                  (excluding public holidays)<br/>
+                  Mon &ndash; Fri 9am &ndash; 8pm 
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div id="slider1_container" style="position: relative; margin: 0 auto; width: 483px; height: 329px;
+            top: 0px; left: 0px; overflow: hidden;  background: -webkit-linear-gradient(left, #fafafa, #ececec);">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+              </div>
+              <div style="position: absolute; display: block; background: url(http://h20386.www2.hp.com/SingaporeStore/html/slider-assets/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+              </div>
+            </div>
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: default; position: absolute; left: 0px; top: 0px;
+              overflow: hidden;width: 483px; height: 329px;" id="uslides">
+              <div>
+                <div id="right-bottom-banner1" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>End of Financial Year Sale<br/>
+                     <font style="font-size: 18px;"> Tax Time save up to 44% off</font></h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://hpshopping.com.au " target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="right-bottom-banner2" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>Get up to $200 back*<br/>
+                      <font style="font-size: 18px;">Get a $200 VISA prepaid gift card with purchase of an eligible HP LaserJet printer or Scanjet scanner</font>
+                    </h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=c-eofycashback" target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="right-bottom-banner3" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>Go the distance with <br/> HP original toner<br/>
+                      <font style="font-size: 18px;">Buy 5 get 20% back*</font>
+                    </h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=c-EOFYTonerBonus" target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div id="right-bottom-banner4" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>EOFY cashback bonus<br/>
+                      <font style="font-size: 18px;">Up to $140 back*</font>
+                    </h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=c-EOFYPrintBonus" target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="right-bottom-banner5" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>Up to $50 cashback<br/>
+                      <font style="font-size: 18px;">when you buy any 2 eligible HP inks</font>
+                    </h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=c-EOFYInkBonus" target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="right-bottom-banner6" class="right-bottom-banner">
+                  <div class="text-wrap">
+                    <h1>0% Interest for 12 months<br/>
+                      <font style="font-size: 18px;">When you spend $500 or more on any <br/>HP purchase*. Monthly payments required.</font>
+                    </h1>
+                    <p style="margin-top: 20px;">
+                      <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=c-installment" target="_blank" class="cta-gray-btn">more details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style>
+              /* jssor slider bullet navigator skin 21 css */
+              /*
+              .jssorb21 div           (normal)
+              .jssorb21 div:hover     (normal mouseover)
+              .jssorb21 .av           (active)
+              .jssorb21 .av:hover     (active mouseover)
+              .jssorb21 .dn           (mousedown)
+              */
+              .jssorb21 {
+              position: absolute;
+              }
+              .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+              position: absolute;
+              /* size of bullet elment */
+              width: 32px;
+              height: 8px;
+              text-align: center;
+              line-height: 19px;
+              color: white;
+              font-size: 12px;
+              background: url(images/black-slider.png) no-repeat;
+              overflow: hidden;
+              cursor: pointer;
+              }
+              .jssorb21 div:hover, .jssorb21 .av{
+              background: url(images/blue-slider.png) no-repeat;
+              }
+            </style>
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb21" style="bottom: 20px; right:0px;" id="navigator">
+              <!-- bullet navigator item prototype -->
+              <div u="prototype"></div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="business-club">
+      <div class="contain">
+        <div class="text-wrap">
+          <h1>Business Club</h1>
+          <p>Gain access to savings of up to 30% and a dedicated account manager. The best one-stop-shop for your business, providing
+      the perfect HP products to meet your needs.</p>
+          <p style="margin-top: 20px;">
+            <a href="#" target="_blank" class="cta-blue-btn">Join now</a>
+          </p>
+        </div>
+      </div>
+      </div> -->
+    <div id="business-trust">
+      <div class="contain">
+        <div class="text-wrap">
+          <h1>Businesses trust HP. <br/>
+            That&rsquo;s why we ship a commercial PC 
+            every second.
+          </h1>
+          <p>IDC Worldwide Quarter PC Tracker. Oct 2015</p>
+        </div>
+      </div>
+    </div>
+    <div id="personal-systems">
+      <div class="text-wrap">
+        <h1>The proven leader in personal systems</h1>
+        <p class="main-txt">With new technologies in the horizon, the new HP Inc. is here to deliver innovations that empower businesses. You can look forward to exclusive materials, enhanced security and seamless collaboration with our latest computing devices.</p>
+      </div>
+      <div class="row" id="bt-experience">
+        <div class="col-md-7 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <img src="images/tablet-stylus.png" id="tablet-img"/>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <div class="text-wrap">
+              <h2>Designed for a better experience </h2>
+              <p>HP has raised the bar on commercial design for PCs. From the world&rsquo;s thinnest business HP EliteBooks in its class<sup>1</sup>, to beautiful brushed aluminium used on jet engines, we&rsquo;ve combined flawless design with high-quality materials that work and look great.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="esy-collaboration">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <div class="text-wrap">
+              <h2>Easy collaboration for the modern workplace </h2>
+              <p>We have developed key technologies that address pain points that you might experience in meetings and remote conferencing. With crystal clear audio from Bang &amp; Olufsen, and our latest Noise Reduction Software, collaborating has never been easier for businesses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <img src="images/personal-system.png" id="es-img"/>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="enhanced-security">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <img src="images/hp-camera.png" id="security-img"/>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="rd-wrapper">
+            <div class="text-wrap">
+              <h2>Enhanced security you can count on </h2>
+              <p>Industry-leading security solutions are built into our devices. These solutions protect the devices and information even at BIOS level. From HP BIOSphere, our industry-leading built-in firmware ecosystem, to HP Touchpoint Manager that enforces and manages security policies, a whole range of solutions work together to give businesses peace of mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="prd-blk" class="no-mobile-blk">
+      <div class="prd-wrap">
+        <div class="row first-tabs">
+          <a href="#by-product">
+            <div class="col-md-12 col-sm-12 tabs-brk active" id="by-product">
+              <p>
+                Find products by Type &nbsp;&nbsp;&nbsp;<!-- <img src="images/arrow-active.png" class="img-arrow-active"/> --><span class="glyphicon glyphicon-menu-down" style="font-size: 16px;"></span>
+              </p>
+            </div>
+          </a>
+          <!--  <a href="#by-industry">
+            <div class="col-md-6 col-sm-6 tabs-brk" id="by-industry">
+              <p>Find products by Industries &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-down" style="font-size: 16px;"></span></p>
+            </div>
+            </a> -->
+        </div>
+        <div class="row second-tabs">
+          <a>
+            <div class="col-md-4 col-sm-4 tabs-brk" id="desktops">
+              <p>Desktop</p>
+              <div id="desktop" class="img-blk"></div>
+              <div class="arrow">
+                <div class="glyphicon-menu-down"></div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="col-md-4 col-sm-4 tabs-brk active" id="laptops">
+              <p>Laptop</p>
+              <div id="laptop" class="img-blk"></div>
+              <div class="arrow">
+                <div class="glyphicon glyphicon-menu-down"></div>
+              </div>
+            </div>
+          </a>
+          <!-- <div class="col-md-3 col-sm-3 tabs-brk" id="tablets">
+            <p>Tablets Hybrids</p>
+            <div id="tablet" class="img-blk"></div>
+            <div class="arrow"><div class="glyphicon-menu-down"></div></div>
+            </div> -->
+          <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/offer.aspx?p=b-cto" target="_blank">
+            <div class="col-md-4 col-sm-4 tabs-brk" id="configure-to-order">
+              <p>Configure to order</p>
+              <div id="cto-img" class="img-blk"></div>
+              <div class="arrow">
+                <div class="glyphicon-menu-down"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <style>
+          .products-category.disabled-content{
+          display: none;
+          }
+        </style>
+        <div class="row products-category" id="laptop-prd-blk">
+          <div class="col-md-2 col-sm-2">
+            <div class="row  product-desc group-1 title-group" style="min-height: 127px;">
+              <p>Model</p>
+            </div>
+            <div class="row product-use group-1 title-group">
+              <p style="color: #0095d5; font-weight: lighter;">Usage</p>
+            </div>
+            <div class="row product-desc group-1 title-group" style="min-height: 240px;">
+              <p>Screen sizes</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>Thickness / Weight</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>Processor</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>Graphics</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>RAM</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>HDD</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-sec">
+                <p>Security<span style="float: right;" id="tab-collapsible-sign">-</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-sec icon-group-height" id="collapsible-content-sec">
+              <p>Security Lock Slot</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Ties PC to your desk via cable" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>TPM</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Helps protect sensitive user data stored locally on a PC" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Finger Print Reader</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Your finger print is the password, no remembering of passwords.  Ensure unique 'hardened' fingerprint match on sensor hardware." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>HP Bio Sphere</p>
+              <a data-toggle="tooltip" data-placement="right" title="HP BIOSphere is an industry-leading firmware ecosystem that provides an architecture that is designed to prevent, detect and repair attacks." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>HP Client Security</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="From hardware, to firmware, to software, all working together to secure the device, safeguard the user's identity and data, and protect from attacks." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Smart Card Reader</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Smart Card Reader helps strengthen identity protection beyond just a password, while still giving employees fast access to their PCs." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Sure Start</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="HP Sure Start is an industry's first self-healing technology that works in conjunction with HP BIOSphere to provide an added level of hardware security that makes the BIOS immune to attacks.  If an attack or defect is detected, the HP Sure Start embedded controller heals the BIOS using a clean copy that is stored in a secret memory, a place that 3rd party software or firmware can't access." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-dua">
+                <p>Durability<span style="float: right;" id="tab-collapsible-sign-dua">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-dua icon-group-height" id="collapsible-content-dua">
+              <p>Industry Standard Testing</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Essential Durability" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>HP Total Test Process</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="An exhaustive series of rigorous tests and validation procedures that demonstrate superior quality and reliability in a wide range of applications
+                and operating environments.  Our comprehensive and proven testing program consists of a minimum of 120,000 hours of rigorous multi-tiered testing and validation procedures per computing platform. The program, driven by rigid quality specifications and standards, includes 50,000 test steps, with 240 industry-standard hardware and software products tested for compatibility." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Spill Resistant  Keyboard</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Business Durability" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>Military  STD Test</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="This standard, though created specifically for the U.S. Department of Defense (DoD), is widely used as a benchmark for quality for commercial products in multiple industries. It outlines a broad range of tests that can be tailored to measure the reliability of specific pieces of equipment and includes multi-tiered climatic and environmental test methods." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-connect">
+                <p>Connectivity<span style="float: right;" id="tab-collapsible-sign-connect">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-connect icon-group-height" id="collapsible-content-connect">
+              <p>VGA, RJ-45</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Business Connectivity" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>USB3.0 charging, 3G/4G, WLAN Ac Band (Optional needs to be ordered spearately)</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="USB charging allows you to charge even when PC is shut" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Docking Connector &amp; Display Port</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Expand your connectivity easily and productively." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-manage">
+                <p>Manageability<span style="float: right;" id="tab-collapsible-sign-manage">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-manage icon-group-height" id="collapsible-content-manage">
+              <p>Charging Cycles</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Higher charging cycles prevents recurring cost on battery" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Battery Warranty</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Better warranty terms saves cost over the lifecycle of product" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group collapsible-tab-header" id="collapsible-header-win10">
+              <p>Win10 Pro<span style="float: right;" id="tab-collapsible-sign-win10">+</span></p>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-win10 icon-group-height" id="collapsible-content-win10">
+              <p>Essential Features for Business Usage</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Domain Join, Group Policy Manangement, EMIE, Assigned Access 8.1, Remote Desktop, Client Hyper V" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Management &amp; Deployement</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Easy Upgrade from Pro to Enterprise. Join Azure Active Directory, Single Sign On to cloud hosted APPS" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Security</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Bitlocker (requires TPM1.2 or greater)" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group pricing-group">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+<!--           <div class="col-md-2 col-sm-2">
+  <div class="row product-family group-1">
+    <p>HP Notebook</p>
+    <div class="ratings">
+      <svg class="icon icon-star">
+        <use xlink:href="#icon-star"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="row product-name group-1">
+    <p>200</p>
+  </div>
+  <div class="row product-use group-1">
+    <p>Simple daily task<br/>Ideal for task workers</p>
+  </div>
+  <div class="row product-img-blk group-1">
+    <p>15"</p>
+    <img src="images/200.png" style="float: right;"/>
+  </div>
+  <div class="row product-desc group-1">
+    <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">Starting from</p>
+    <div class="col-md-6">
+      <p style="text-align:left;">25mm</p>
+    </div>
+    <div class="col-md-6">
+      <p style="text-align: right;">2kg</p>
+    </div>
+  </div>
+  <div class="row product-desc group-1">
+    <p>Intel Celeron, Core i3 and Core i5</p>
+  </div>
+  <div class="row product-desc group-1">
+    <p>Intel HD</p>
+  </div>
+  <div class="row product-desc group-1">
+    <p>Up to 4 GB</p>
+  </div>
+  <div class="row product-desc group-1">
+    <p>Up to 500GB HDD</p>
+  </div>
+  <div class="row product-desc group-1">
+    <p>
+      <svg class="icon icon-star star-blue">
+        <use xlink:href="#icon-star"></use>
+      </svg>
+    </p>
+  </div>
+  <div class="row product-desc group-1 icon-group-height collapsible-tab-body-sec">
+    <p>
+      <svg class="icon icon-checkmark">
+        <use xlink:href="#icon-checkmark"></use>
+      </svg>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <br/>
+  </div>
+  <div class="row product-desc group-1">
+    <p>
+      <svg class="icon icon-star star-blue">
+        <use xlink:href="#icon-star"></use>
+      </svg>
+    </p>
+  </div>
+  <div class="row product-desc group-1 icon-group-height collapsible-tab-body-dua">
+    <p>
+      <svg class="icon icon-checkmark">
+        <use xlink:href="#icon-checkmark"></use>
+      </svg>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <br/>
+  </div>
+  <div class="row product-desc group-1">
+    <p>
+      <svg class="icon icon-star star-blue">
+        <use xlink:href="#icon-star"></use>
+      </svg>
+    </p>
+  </div>
+  <div class="row product-desc group-1 icon-group-height collapsible-tab-body-connect">
+    <p>
+      <svg class="icon icon-checkmark">
+        <use xlink:href="#icon-checkmark"></use>
+      </svg>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <br/>
+  </div>
+  <div class="row product-desc group-1">
+    <p></p>
+  </div>
+  <div class="row product-desc group-1 icon-group-height collapsible-tab-body-manage">
+    <p>
+      <svg class="icon icon-checkmark">
+        <use xlink:href="#icon-checkmark"></use>
+      </svg>
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <br/>
+  </div>
+  <div class="row product-desc group-1 title-group">
+    <p>
+      <svg class="icon icon-checkmark">
+        <use xlink:href="#icon-checkmark"></use>
+      </svg>
+    </p>
+  </div>
+  <div class="row product-desc group-1 icon-group-height collapsible-tab-body-win10">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <br/>
+  </div>
+  <div class="row product-desc group-1 pricing-group">
+    <p>Starting from</p>
+    <p class="price-value">$379</p>
+    <p style="margin-top: 20px;">
+      <a href="#" target="_blank" class="cta-blue-btn">more details</a>
+    </p>
+  </div>
+</div> -->
+          <div class="col-md-5 col-sm-4">
+            <div class="row product-family">
+              <p>HP PROBOOK</p>
+              <div class="ratings">
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <br/>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="row product-name group-2">
+              <div class="col-md-6 col-sm-6">
+                <p>400</p>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <p>600</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-use group-2">
+                <p>Everyday productivity
+                  Ideal for professionals
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-use group-2">
+                <p>Enhanced productivity
+                  Ideal for professionals
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-img-blk group-2">
+                <p>13" 15" 17"</p>
+                <img src="images/400.png" style="float: right;"/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-img-blk group-2">
+                <p>14" 15"</p>
+                <img src="images/600.png" style="float: right;"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">Starting from</p>
+                <div class="col-md-6">
+                  <p style="text-align:left;">23mm</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="text-align: right;">1.8kg</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">Starting from</p>
+                <div class="col-md-6">
+                  <p style="text-align:left;">23mm</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="text-align: right;">1.5kg</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Intel Core i3, Core i5 and Core i7</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Intel Core i3, Core i5 and Core i7 </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to NVIDIA GT</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to NVIDIA GT</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to 8 GB</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to 8 GB</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to 1 TB</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>Up to 1TB HDD / 256GB SSD</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-sec">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <p>&nbsp;</p>
+                <br/>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+            </div>
+            <!-- Duability-->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-dua">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+            </div>
+            <!-- Duability-->
+            <!-- Connectivity-->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-connect">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/><br/>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/><br/><br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+            </div>
+            <!-- Connectivity-->
+            <!-- Manageability -->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p></p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-manage">
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>&nbsp;</p>
+                <br/>
+                <p>&nbsp;</p>
+                <br/><br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+            </div>
+            <!-- Manageability -->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2 title-group">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2 title-group">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 product-desc group-2 icon-group-height collapsible-tab-body-win10">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="col-md-6 product-desc group-2 icon-group-height collapsible-tab-body-win10">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                <p>Starting from</p>
+                <p class="price-value">$1002</p>
+                <p style="margin-top: 20px;">
+                  <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=NTB&ctrl=f&fc_sn_probook430=1&fc_sn_probook450=1&fc_sn_probook470=1" target="_blank" class="cta-blue-btn">more details</a>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                <p>Starting from</p>
+                <p class="price-value">$1291</p>
+                <p style="margin-top: 20px;">
+                  <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=NTB&ctrl=f&fc_sn_probook640=1&fc_sn_probook6400=1&fc_sn_probook650=1&fc_sn_probook6500=1" target="_blank" class="cta-blue-btn">more details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-4">
+            <div class="row product-family">
+              <p>HP Elitebook</p>
+              <div class="ratings">
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <br/>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+                <br/>
+                <svg class="icon icon-star">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="row product-name group-3">
+              <div class="col-md-6 col-sm-6">
+                <p>800</p>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <p>1000</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-use group-3">
+                <p>Mission critical
+                  Ideal for domain specialist 
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-use group-3">
+                <p>Ultra premium &amp; mission critical
+                  Ideal for executives
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-img-blk group-3">
+                <p>12" 14" 15"</p>
+                <img src="images/705.png" style="float: right;"/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-img-blk group-3" style="overflow:hidden;">
+                <p>13" 14"</p>
+                <img src="images/1000.png" style="float: right;"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">Starting from</p>
+                <div class="col-md-6">
+                  <p style="text-align:left;">20mm</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="text-align: right;">1.25kg</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">Starting from</p>
+                <div class="col-md-6">
+                  <p style="text-align:left;">18mm</p>
+                </div>
+                <div class="col-md-6">
+                  <p style="text-align: right;">900g</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Intel Core i3, Core i5 and Core i7</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Intel Core i3, Core i5 and Core i7</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to NVIDIA GT</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to NVIDIA GT</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to 16 GB</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to 8 GB</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to 2TB HDD / 512GB SSD</p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>Up to 512GB SSD</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-sec">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                  <br/>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                  <br/>
+                </p>
+              </div>
+            </div>
+            <!-- Duability-->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-dua">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+            </div>
+            <!-- Duability-->
+            <!-- Connectivity -->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-connect">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/><br/><br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/><br/><br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+              </div>
+            </div>
+            <!-- Connectivity -->
+            <!-- Manageability -->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <svg class="icon icon-star star-blue">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row icon-group-height collapsible-tab-body-manage">
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+                <br/>
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <!-- Manageability -->
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-3 title-group">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-3 title-group">
+                <p>
+                  <svg class="icon icon-checkmark">
+                    <use xlink:href="#icon-checkmark"></use>
+                  </svg>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 product-desc group-3 icon-group-height collapsible-tab-body-win10">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="col-md-6 product-desc group-3 icon-group-height collapsible-tab-body-win10">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                <p>Starting from</p>
+                <p class="price-value">$1908</p>
+                <p style="margin-top: 20px;">
+                  <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=NTB&ctrl=f&fc_sn_e800=1&fc_sn_elite720=1&fc_sn_elite740=1&fc_sn_elite820=1&fc_sn_elite840=1&fc_sn_elite8400p=1&fc_sn_elite850=1&fc_sn_elite8500w=1" target="_blank" class="cta-blue-btn">more details</a>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                <p>Starting from</p>
+                <p class="price-value">$2272</p>
+                <p style="margin-top: 20px;">
+                  <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=NTB&ctrl=f&fc_sn_e1000=1" target="_blank" class="cta-blue-btn">more details</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-gray products-category disabled-content" id="desktop-prd-blk">
+          <div class="col-md-3 col-sm-3">
+            <div class="row  product-desc group-1 title-group" style="min-height: 127px;">
+              <p>Model</p>
+            </div>
+            <div class="row product-use group-1 title-group">
+              <p style="color: #0095d5; font-weight: lighter;">Usage</p>
+            </div>
+            <div class="row product-desc group-1 title-group" style="min-height: 210px;">
+              <!--  <p>Screen sizes</p> -->
+            </div>
+            <!--  <div class="row product-desc group-1 title-group">
+              <p>Thickness / Weight</p>
+              </div> -->
+            <div class="row product-desc group-1 title-group">
+              <p>Form Factor</p>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <p>Processor</p>
+            </div>
+            <!-- <div class="row product-desc group-1 title-group">
+              <p>Graphics</p>
+              </div>
+              <div class="row product-desc group-1 title-group">
+              <p>RAM</p>
+              </div>
+              <div class="row product-desc group-1 title-group">
+              <p>HDD</p>
+              </div> -->
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-sec-desk">
+                <p>Security<span style="float: right;" id="tab-collapsible-sign-desk">-</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-sec icon-group-height" id="collapsible-content-sec-desk">
+              <p>Security Lock Slot</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Ties PC to your desk via cable" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>TPM</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Helps protect sensitive user
+                data stored locally on a PC" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Finger Print Reader</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Your finger print is the password, no remembering of passwords. 
+                Ensure unique 'hardened' fingerprint match on sensor hardware." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>HP Bio Sphere</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="HP BIOSphere is an industry-leading firmware ecosystem 
+                that provides an architecture that is designed to prevent,
+                detect and repair attacks." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>HP Client Security</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="From hardware, to firmware, to software, all working 
+                together to secure the device, safeguard 
+                the user's identity and data, and protect from attacks.
+                " class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <!--  <p>Smart Card Reader</p><a data-toggle="tooltip" data-placement="right" data-original-title="Business Security" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>Sure Start</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="HP Sure Start is an industry's first self-healing technology that works in 
+                conjunction with HP BIOSphere to provide an added level of hardware
+                security that makes the BIOS immune to attacks.  If an attack or defect is detected,
+                the HP Sure Start embedded controller heals the BIOS using a clean copy 
+                that is stored in a secret memory, a place that 3rd party software or 
+                firmware can't access." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-dua-desk">
+                <p>Durability<span style="float: right;" id="tab-collapsible-sign-dua-desk">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-dua icon-group-height" id="collapsible-content-dua-desk">
+              <p>Industry Standard Testing</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Essential Durability" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>HP Total Test Process</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="An exhaustive series of rigorous tests and validation procedures 
+                that demonstrate superior quality and reliability in a wide range of applications
+                and operating environments.  Our comprehensive 
+                and proven testing program consists of a minimum of 120,000 hours of rigorous
+                multi-tiered testing and validation procedures per computing platform. 
+                The program, driven by rigid quality specifications and standards, 
+                includes 50,000 test steps, with 240 industry-standard hardware
+                and software products tested for compatibility." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <!--  <p>Spill Resistant  Keyboard</p><a data-toggle="tooltip" data-placement="right" data-original-title="Business Durability" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>Military  STD Test</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Enterprise Durability" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-connect-desk">
+                <p>Connectivity<span style="float: right;" id="tab-collapsible-sign-connect-desk">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-connect icon-group-height" id="collapsible-content-connect-desk">
+              <p>VGA, RJ-45</p>
+              <!-- <a data-toggle="tooltip" data-placement="right" data-original-title="Business Connectivity" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+              <p>USB3.0 charging, USB-C</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="USB charging allows you to charge even when PC is shut" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <!--  <p>Docking Connector &amp; Display Port</p><a data-toggle="tooltip" data-placement="right" data-original-title="Enterprise Connectivity" class="custom-tooltip"><div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div></a> -->
+            </div>
+            <div class="row product-desc group-1 title-group">
+              <div class="collapsible-tab-header" id="collapsible-header-manage-desk">
+                <p>Manageability<span style="float: right;" id="tab-collapsible-sign-manage-desk">+</span></p>
+              </div>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-manage icon-group-height" id="collapsible-content-manage-desk">
+              <p>Long Lifecycle, Global Models</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Simplify IT rollouts and stagger deployments at your own pace with up to
+                18-month lifecycle.  Even better, get the same HP configuration 
+                across the globe, available in more than 180 countries 
+                where HP conducts business." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              </p>
+              <p>DASH AMD / vPro (Intel), 3 Yr Base Warranty</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Intel® vPro™ technology remotely configure, diagnose, isolate and 
+                repair your PC fleet regardless of OS or system state.  It heals systems 
+                and receive security updates remotely even in Standby, Hibernate or Off states. 
+                The DASH standards are designed to assist in the remote management of
+                common desktop infrastructure tasks, such as deploying new operating systems
+                , monitoring of computer system health, power control and power state 
+                monitoring, and asset inventory collection." class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              </p>
+              <p>HP Touchpoint Manager</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Boost productivity with a powerful cloud-based app that helps companies 
+                short on IT resources easily manage data, devices, and users. With HP Touchpoint Manager,
+                IT can quickly troubleshoot issues real-time and use point-and-click security 
+                policies across different devices, brands and operating systems."
+                class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              </p>
+              <p>Tool-less serviceability</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Extend the life of your investment with a tool-less chassis 
+                and a range of expansion slots, bays, ports, and connectors
+                for the most demanding business needs."
+                class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              </p>
+            </div>
+            <div class="row product-desc group-1 title-group collapsible-tab-header" id="collapsible-header-win10-desk">
+              <p>Win10 Pro<span style="float: right;" id="tab-collapsible-sign-win10-desk">+</span></p>
+            </div>
+            <div class="row product-desc group-1 collapsible-tab-body-win10 icon-group-height" id="collapsible-content-win10-desk">
+              <p>Essential Features for Business Usage</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Domain Join, Group Policy Manangement, EMIE, Assigned Access 8.1, Remote Desktop, Client Hyper V" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Management &amp; Deployement</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Easy Upgrade from Pro to Enterprise. Join Azure Active Directory, Single Sign On to cloud hosted APPS" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+              <p>Security</p>
+              <a data-toggle="tooltip" data-placement="right" data-original-title="Bitlocker (requires TPM1.2 or greater)" class="custom-tooltip">
+                <div style="float: right; margin-top: -25px; margin-right: 20px;" class="icon-1"></div>
+              </a>
+            </div>
+            <div class="row product-desc group-1 title-group pricing-group">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-9">
+            <div class="col-md-8 col-sm-8">
+              <div class="row product-family">
+                <p>PRODESK</p>
+                <div class="ratings">
+                  <svg class="icon icon-star">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <br/>
+                  <svg class="icon icon-star">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="row product-name group-2">
+                <div class="col-md-6 col-sm-6">
+                  <p>400</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <p>600</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-use group-2">
+                  <p>Everyday Productivity</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-use group-2">
+                  <p>Everyday Productivity</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-img-blk group-2">
+                  <img src="images/prodesk400.png"/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-img-blk group-2 no-2">
+                  <img src="images/prodesk600.png"/>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <div class="col-md-6"><p style="text-align:left;">23mm</p> </div>
+                  <div class="col-md-6"><p style="text-align: right;">1.8kg</p></div>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <div class="col-md-6"><p style="text-align:left;">23mm</p> </div>
+                  <div class="col-md-6"><p style="text-align: right;">1.5kg</p></div>
+                </div>
+                </div> -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Desktop Mini, Small Form Factor, All-in-One </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Desktop Mini, Small Form Factor, Mini Tower, All-in-One</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Intel Core i3, i5 &amp; i7</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Intel Core i3, i5 &amp; i7</p>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to NVIDIA GT</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to NVIDIA GT</p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to 8 GB</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to 8 GB</p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to 1 TB</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>Up to 1 TB</p>
+                </div>
+                </div> -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-sec">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+              </div>
+              <!-- Duability-->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-dua">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+              </div>
+              <!-- Duability-->
+              <!-- Connectivity-->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-connect">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <!-- <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/><br/> -->
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/><br/><br/>
+                  <!-- <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/> -->
+                </div>
+              </div>
+              <!-- Connectivity-->
+              <!-- Manageability -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-manage">
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <p>&nbsp;</p>
+                  <br/><br/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2">
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                </div>
+              </div>
+              <!-- Manageability -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2 title-group">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2 title-group">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2 icon-group-height collapsible-tab-body-win10">
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2 icon-group-height collapsible-tab-body-win10">
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                  <p>Starting from</p>
+                  <p class="price-value">$1140</p>
+                  <p style="margin-top: 20px;">
+                    <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=DTP&ctrl=f&fc_sn_prodesk400=1" target="_blank" class="cta-blue-btn">more details</a>
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+             <p>Starting from</p> 
+             <p class="price-value">$1215</p>
+             <p style="margin-top: 20px;">
+               <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=DTP&ctrl=f&fc_sn_prodesk600=1" target="_blank" class="cta-blue-btn">more details</a>
+             </p>
+             </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-3">
+              <div class="row product-family">
+                <p>ELITEDESK</p>
+                <div class="ratings">
+                  <svg class="icon icon-star">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <br/>
+                  <svg class="icon icon-star">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                  <br/>
+                  <svg class="icon icon-star">
+                    <use xlink:href="#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="row product-name group-3">
+                <div class="col-md-12 col-sm-12">
+                  <p>800</p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6">
+                  <p>1000</p>
+                  </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-use group-3">
+                  <p>Mission critical</p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-use group-3">
+                  <p>Ultra premium &amp; mission critical
+                    Ideal for executives</p>
+                  </div> -->
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-img-blk group-3">
+                  <img src="images/elitedesk800.png"/>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-img-blk group-3" style="overflow:hidden;">
+                  <p>12" 13"</p>
+                  <img src="images/1000.png" style="float: right;"/>
+                  </div> -->
+              </div>
+              <!-- <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <div class="col-md-6"><p style="text-align:left;">20mm</p> </div>
+                  <div class="col-md-6"><p style="text-align: right;">1.25kg</p></div>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <div class="col-md-6"><p style="text-align:left;">18mm</p> </div>
+                  <div class="col-md-6"><p style="text-align: right;">900g</p></div>
+                </div>
+                </div> -->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>Desktop Mini, Small Form Factor, Tower, All-in-One
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>Intel Core i3, i5 &amp; i7
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p>Intel i3 to i5, AMD A7-A8</p>
+                  </div> -->
+              </div>
+              <!-- <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>Up to NVIDIA GT</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p>Up to NVIDIA GT</p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>Up to 16 GB</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p>Up to 8 GB</p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>Up to 2 TB</p>
+                </div>
+                <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p>Up to 1 TB</p>
+                </div>
+                </div> -->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <!--  <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg></p>
+                  </div> -->
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-sec">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p> <svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p> <br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg><br/></p>
+                  </div> -->
+              </div>
+              <!-- Duability-->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <!--  <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg></p>
+                  </div> -->
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-dua">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p> <svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p> <br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  </div> -->
+              </div>
+              <!-- Duability-->
+              <!-- Connectivity -->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg></p>
+                  </div> -->
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-connect">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/><br/><br/>
+                  <p>&nbsp;</p>
+                  <br/>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p> <svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p> <br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/><br/><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  </div> -->
+              </div>
+              <!-- Connectivity -->
+              <!-- Manageability -->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star star-blue">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg><svg class="icon icon-star star-blue"><use xlink:href="#icon-star"></use></svg></p>
+                  </div> -->
+              </div>
+              <div class="row icon-group-height collapsible-tab-body-manage">
+                <div class="col-md-12 col-sm-12 product-desc group-3">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/><br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                  <br/>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3">
+                  <p> <svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p> <br/><br/>
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p><br/>
+                  </div> -->
+              </div>
+              <!-- Manageability -->
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3 title-group">
+                  <p>
+                    <svg class="icon icon-checkmark">
+                      <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-3 title-group">
+                  <p><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg></p>
+                  </div> -->
+              </div>
+              <div class="row product-desc group-3 icon-group-height collapsible-tab-body-win10">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <br/>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 product-desc group-3 pricing-group">
+                  <p>Starting from</p>
+                  <p class="price-value">$1179</p>
+                  <p style="margin-top: 20px;">
+                    <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/List.aspx?sel=DTP&ctrl=f&fc_sn_el800=1&fc_sn_el700=1" target="_blank" class="cta-blue-btn">more details</a>
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 col-sm-6 product-desc group-2 pricing-group">
+                  <p>Starting from</p> 
+                  <p class="price-value">$2200 - $3237</p>
+                  <p style="margin-top: 20px;">
+                    <a href="#" target="_blank" class="cta-blue-btn">more details</a>
+                  </p>
+                  </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="business-club">
+      <div class="contain">
+        <div class="text-wrap">
+          <h1>Join HP&rsquo;s Business Club</h1>
+          <p>Gain access to savings of up to 30% and a dedicated account manager. The best one-stop-shop for your business, providing the perfect HP products to meet your needs.</p>
+          <p style="margin-top: 20px;">
+            <a href="http://h20386.www2.hp.com/AustraliaStore/Merch/BusinessClub.aspx" target="_blank" class="cta-blue-btn">Join now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="accessories" class="row"> -->
+    <!-- <div class="text-wrap">
+      <h1>Suit yourself. </h1>
+      <p>Whether you are carrying it all with you or setting up a desktop workspace, HP accessories are designed to deliver the best results from your product.</p>
+      </div>
+      <div class="row acc-blk">
+      <div class="col-md-3 col-sm-6 col-xs-12 acc">
+        <a href=""><div class="wrap-blk">
+          <img src="images/headphones.png"/>  
+        </div>
+        <p>Audio</p></a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 acc">
+        <a href=""><div class="wrap-blk">
+          <img src="images/docking.png"/>
+        </div>
+        <p>Backpacks, bags and sleeves</p></a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 acc">
+       <a href=""><div class="wrap-blk">
+          <img src="images/battery.png"/>
+        </div>
+        <p>Batteries and adapters</p></a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 acc">
+        <a href=""><div class="wrap-blk">
+          <img src="images/docks.png"/>
+        </div>
+        <p>Docking solutions</p></a>
+      </div>
+      </div> -->
+    <!--  <div class="row shop-with-hp">
+      <p>6 reasons to shop with HP</p>
+      </div>
+      <div class="row payments">
+      <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-3">
+            <img src="images/credit-card.png"/>
+          </div>
+          <div class="col-md-9">
+            <h2>Easy Payments</h2>
+            <p>Payment methods to suit all your needs.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-3">
+            <img src="images/up.png"/>
+          </div>
+          <div class="col-md-9">
+            <h2>Free Delivery</h2>
+            <p>Free next day delivery.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-3">
+            <img src="images/glasses.png"/>
+          </div>
+          <div class="col-md-9">
+            <h2>Account Manager</h2>
+            <p>Dedicated account managers to help you choose the best solution.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-3">
+            <img src="images/card.png"/>
+          </div>
+          <div class="col-md-9">
+            <h2>Financing Type</h2>
+            <p>12-month 0% interest-free 
+      instalments for minimum 
+      purchase $999</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-3">
+            <img src="images/printing.png" style="width: 100%; max-width: 133px;"/>
+          </div>
+          <div class="col-md-9">
+            <h2>Trade-in Trade-up</h2>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+        <div class="wrapp row">
+          <div class="col-md-12">
+            <p style="text-align: center;">For more info</p>
+            <h2 style="text-align: center;">Ask an expert</h2>
+            <p style="margin-top: 20px; text-align: center;">
+              <a href="#" target="_blank" class="cta-blue-btn">1300 725 018</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div> -->
+    <div id="accessories" class="row">
+      <div class="row shop-with-hp">
+        <p>6 reasons to shop with HP</p>
+      </div>
+      <div class="row payments">
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+          <div class="wrapp row">
+            <div class="col-md-3">
+              <img src="http://h20386.www2.hp.com/AustraliaStore/html/au-smb-microsite/images/credit-card.png">
+            </div>
+            <div class="col-md-9">
+              <h2>Easy Payments</h2>
+              <p>Payment methods to suit all your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap">
+          <div class="wrapp row">
+            <div class="col-md-3">
+              <img src="http://h20386.www2.hp.com/AustraliaStore/html/au-smb-microsite/images/up.png">
+            </div>
+            <div class="col-md-9">
+              <h2>Free Delivery</h2>
+              <p>Free next day delivery (terms &amp; conditions apply).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap" style="
+          border-right: none;
+          ">
+          <div class="wrapp row">
+            <div class="col-md-3">
+              <img src="http://h20386.www2.hp.com/AustraliaStore/html/au-smb-microsite/images/glasses.png">
+            </div>
+            <div class="col-md-9">
+              <h2>Account Manager</h2>
+              <p>Dedicated account managers to help you choose the best solution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap" style="
+          border-bottom: none;
+          ">
+          <div class="wrapp row">
+            <div class="col-md-3">
+              <img src="http://h20386.www2.hp.com/AustraliaStore/html/au-smb-microsite/images/card.png">
+            </div>
+            <div class="col-md-9">
+              <h2>Financing Type</h2>
+              <p>12-month 0% interest-free 
+                instalments for minimum 
+                purchase $999
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap" style="
+          border-bottom: none;
+          ">
+          <div class="wrapp row">
+            <div class="col-md-3">
+              <img src="http://h20386.www2.hp.com/AustraliaStore/html/au-smb-microsite/images/configure.png">
+            </div>
+            <div class="col-md-9">
+              <h2>Configure to order</h2>
+              <p>Customize your new HP Business desktop or notebook to suit your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 blk-wrap" style="
+          border-bottom: none;
+          border-right: none;
+          ">
+          <div class="wrapp row">
+            <div class="col-md-12">
+              <p style="text-align: center;">For more info</p>
+              <h2 style="text-align: center;">Ask an expert</h2>
+              <p style="margin-top: 20px; text-align: center;">
+                <a href="#" target="_blank" class="cta-blue-btn">1300 725 018</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="terms-and-conditions">
+      <div class="contents">
+        <p>*Find Out More on Tax Deduction - <a href="https://www.ato.gov.au/general/new-legislation/in-detail/direct-taxes/income-tax-for-businesses/small-business---expanding-accelerated-depreciation/" target="_blank">https://www.ato.gov.au/general/new-legislation/in-detail/direct-taxes/income-tax-for-businesses/small-business---expanding-accelerated-depreciation/</a> </p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="svgxuse.js"></script>
+    <script type="text/javascript" src="http://h20386.www2.hp.com/AustraliaStore/html/easter-au/js/wow.min.js"></script>
+    <script language="javascript" type="text/javascript" src="http://h20386.www2.hp.com/SingaporeStore/html/slider-assets/js/jssor.js"></script>
+    <script language="javascript" type="text/javascript" src="http://h20386.www2.hp.com/SingaporeStore/html/slider-assets/js/jssor.slider.js"></script>
+    <script>
+      new WOW().init();
+      document.domain = "hp.com";
+    </script>
+    <script>
+ $(function(){
+        fixViewport();
+    });
+
+  function fixViewport() {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width, //get proper width
+                mw = 500, // min width of site
+                ratio =  Math.round((ww/mw)*100)/100, //calculate ratio
+                vp = 'initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, width=' + ww;
+            if( ww < mw){ //smaller than minimum size
+                vp = 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww;
+            }
+            $('#Viewport').attr('content', vp);
+        }
+    }
+    window.onload = function() {
+    var elements = document.querySelectorAll('button');
+    var emptyFunction = function() {};
+    for(var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('touchstart', emptyFunction, false);
+    }
+    };
+</script>
+    <script src="js/main.js"></script>
