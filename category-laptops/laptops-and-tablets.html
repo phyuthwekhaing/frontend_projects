@@ -1,0 +1,1003 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<title>HP Laptops</title>
+</head>
+<body>
+<link rel="Stylesheet" type="text/css" href="css/HPExperience.1.4.css" />
+<link type="text/css" rel="Stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<script src="js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/hps-fontface-remove.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<style>
+#hero{
+	background: url(images/hero-banner.jpg) no-repeat center center;
+	min-height: 600px;
+}
+.content-wrapp{
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+#hero h1{
+	font-size: 56px;
+    color: #0096d6;
+    margin-top: 150px;
+    float: right;
+    text-align: right;
+}
+#best-laptops h3{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 42px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	color: #767676;
+}
+.row{
+	width: 100%;
+	margin: 0px;
+	clear:both; 
+	height:auto;
+}
+.col-6{
+	width: 48.7%;
+	width: calc(50% - 10px);
+	margin-right: 10px;
+	float: left;
+}
+.col-6:last-of-type{
+	margin-right: 0px;
+	margin-left :10px;
+}
+.col-7{
+	width: 57%;
+	width: calc(58% - 10px);
+	margin-right: 10px;
+	float :left;
+}
+.col-5{
+	width: 39% ;
+	width: calc(41% - 10px);
+	margin-left: 10px;
+	float: left;
+}
+.best-prd{
+	width: 100%;
+}
+#best-laptops .content-wrapp{
+	max-width: 1280px;
+}
+.module {  
+  position: relative;
+  overflow: hidden;
+  width: 625px;
+  height: 369px;
+  max-width: 100%;
+}
+#prd-1 .module{
+	background: url(images/spectre.jpg) no-repeat center center;
+}
+#prd-2 .module{
+	background: url(images/spectrex360.jpg) no-repeat center center;
+}
+#prd-3 .module{
+	background: url(images/elitebook.jpg) no-repeat center center;
+	width: 739px;
+    height: 240px;
+}
+.module > header , .module > content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  /* background: inherit;
+  background-attachment: fixed; */
+  overflow: hidden;
+
+}
+.module > content{
+	top: 0;
+	padding-top: 90px;
+}
+#prd-3 .module > content{
+	padding-top: 30px;
+}
+.module > header::before, .module > content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+ /*  background: inherit; */
+  /* background-attachment: fixed; */
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.module > header::after, .module > content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.module > content::after {
+	background: rgba(0,0,0,0.7);
+}
+.module > header > h1, .module > content > h1 {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 42px;
+  font-weight: lighter;
+}
+
+ .module > content > p {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+ }
+ a.cta-white-btn{
+ 	padding: 10px 30px;
+ 	border : 1px solid #ffffff;
+ 	color: #ffffff;
+ 	text-decoration: none;
+ 	border-radius: 2px;
+ }
+  a.cta-view-all{
+ 	padding: 10px 30px;
+ 	border : 1px solid #0096d6;
+ 	color: #0096d6;
+ 	text-decoration: none;
+ 	border-radius: 2px;
+ }
+
+* {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hide{
+	display: none;
+}
+.row:after,.row:before{
+	display:table;
+	content:" ";
+}
+.row:after{clear:both;}
+#view-all h2{
+	font-size: 32px;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 90px;
+	color: #ffffff;
+	text-decoration: none;
+}
+#view-all a{
+	text-decoration: none;
+}
+/* CSS for tabs */
+.blackline{
+	width: 90%;
+	margin: 0 auto;
+	height : 1px;
+	background: #767676;
+	position: absolute;
+	top: 60px;
+}
+.tab-blocks .img-blk.blackline{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	display: block;
+}
+#art-work .blackline, #art-work2 .blackline, #value-prop .blackline
+{
+	top: 30px;
+}
+.tab-container {
+    margin: 0 auto;
+    min-height: 80px;
+}
+.tab-wrapp{
+}
+.tab-wrapp p{
+	font-size: 18px;
+	color: #767676;
+	text-align: center;
+	font-weight: lighter;
+}
+.tab-sub{
+	cursor: pointer;
+}
+.tab-sub.active{
+    border-bottom: 4px solid #0096d6;
+    min-height: 80px;
+}
+.tab-sub.active p{
+	font-weight: bold;
+}
+.tab-content .row{
+	margin: 0px;
+}
+.tab-content {
+    margin-top: 0px;
+    background: #f9f9f9;
+    border: 1px solid #e5e8e8;
+}
+.tab-blocks{
+	display:none;
+}
+.tab-blocks.active{
+	display: block;
+}
+@-moz-keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-moz-transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-moz-transform: translateY(0px);
+	}
+}
+@-webkit-keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+@keyframes slideInUp{
+	0%{
+		opacity: 0;
+		-ms-transform: translateY(0px);
+		transform: translateY(200px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(200px);
+		transform: translateY(0px);
+	}
+}
+.tab-blocks.active{
+	opacity: 1;
+	z-index: 100;
+	-webkit-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	-moz-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	-ms-animation: slideInUp 1.2s ease-in-out 0s backwards;
+	animation: slideInUp 1.2s ease-in-out 0s backwards;
+}
+.col-2{
+	width: 19%;
+	width: calc(20% - 10px);
+	margin-right: 10px;
+	float : left;
+}
+.col-2:last-of-type{
+	margin-right: 0px;
+
+}
+.col-3{
+	width: 23%;
+	width: calc(25% - 10px);
+	margin-right: 10px;
+	float : left;
+}
+.col-3:last-of-type{
+	margin-right: 0px;
+}
+.col-4{
+	width: 32%;
+	width: calc(33.33% - 20px);
+	margin-right: 10px;
+	margin-left: 10px;
+	float : left;
+}
+.col-4:first-of-type{
+	margin-left: 0px;
+}
+.col-4:last-of-type{
+	margin-right: 0px;
+
+}
+#tabs .col-4, #tabs .col-6{
+	background: #ffffff;
+	padding: 0px;
+	border: 1px solid #e5e8e8;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#tabs .col-4 h3, #tabs .col-6 h3{
+	font-size: 24px;
+	font-weight: lighter;
+	text-align: center;
+}
+#tabs .col-4 p, #tabs .col-6 p{
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
+}
+a.cta-products, a.cta-products i{
+	color: #0096d6;
+	text-decoration: none;
+}
+#promo h1{
+	font-size: 42px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: ##767676;
+}
+#promo .content-wrapp p{
+	font-size: 18px;
+	color: #767676;
+	text-align: left;
+	margin-top: 10px;
+}
+#promo .col-6{
+	border: none;
+}
+#promo a.cta-view-all{
+	border-radius: 5px;
+}
+/*CSS for tabs */
+@media (max-width: 586px){
+	.col-6, .col-6, .col-4, .col-5{
+		width: 100%;
+		margin: 0px 10px;
+	}
+}
+</style>
+<div id="hero">
+	<div class="content-wrapp">
+		<h1>Laptops <br/>&amp; Tablets</h1>
+	</div>
+</div>
+<div id="best-laptops">
+	<div class="content-wrapp">
+		<h3>Our best new laptops</h3>
+		<div class="row">
+			<div class="col-6" id="prd-1">
+				<div class="module">
+					<header class="prd-1-header">
+					<h1>
+					  HP Spectre
+					</h1>
+					</header>
+					<content class="prd-1-content">
+					<h1> HP Spectre</h1>
+					<p>World's Thinnest 14" business notebook.<br/>
+					Starting at : $XXX.XX</p>
+					<p style="margin-top: 30px;"><a href="#" class="cta-white-btn">Shop now</a></p>
+					</content>
+				</div>
+			</div>
+			<div class="col-6" id="prd-2">
+				<div class="module">
+					<header class="prd-2-header">
+					<h1>
+					 Spectre x360
+					</h1>
+					</header>
+					<content class="prd-2-content">
+					<h1>Spectre x360</h1>
+					<p>360 degrees of versatility<br/>
+					Starting at: $XXX.XX</p>
+					<p style="margin-top: 30px;"><a href="#" class="cta-white-btn">Shop now</a></p>
+					</content>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-7" id="prd-3">
+				<div class="module">
+					<header class="prd-3-header">
+					<h1>
+					 Elitebook Folio G1
+					</h1>
+					</header>
+					<content class="prd-3-content">
+					<h1> Elitebook Folio G1</h1>
+					<p>Four versatile modes.  Fully featured.<br/>
+					Starting at : $XXX.XX</p>
+					<p style="margin-top: 30px;"><a href="#" class="cta-white-btn">Shop now</a></p>
+					</content>
+				</div>
+			</div>
+			<div class="col-5" id="view-all">
+			<a href="#" target="" >
+			 	<div class="row" style="height : 240px; background: #0096d6;">
+					<h2>View all laptops</h2>
+			 	</div>
+			</a>
+			</div>
+		</div>
+		<h3>A laptop for every lifestyle</h3>
+
+	</div>
+</div>
+<div id="tabs">
+	<div class="content-wrapp tab-wrapp">
+		<div class="tab-container">
+			<div class="col-2 tab-sub active" id="tab-1">
+				<div style="max-width: 40px; min-height: 42px; margin: 0 auto;">
+					<img src="images/star.png" style="width: 100%; max-width: 40px;"/>
+				</div>
+				<p>Premium</p>
+			</div>
+			<div class="col-2 tab-sub" id="tab-2">
+				<div style="max-width: 42px; min-height: 42px; margin: 0 auto;">
+					<img src="images/tag.png" style="width: 100%; max-width: 42px;"/>
+				</div>
+				<p>Great value</p>
+			</div>
+			<div class="col-2 tab-sub" id="tab-3">
+				<div style="max-width: 72px; min-height: 42px; margin: 0 auto;">
+					<img src="images/entry.png" style="width: 100%; max-width: 72px;"/>
+				</div>
+				<p>Entry level</p>
+			</div>
+			<div class="col-2 tab-sub" id="tab-4">
+				<div style="max-width: 39px; min-height: 42px; margin: 0 auto;">
+					<img src="images/business.png" style="width: 100%; max-width: 39px;"/>
+				</div>
+				<p>Business</p>
+			</div>
+			<div class="col-2 tab-sub" id="tab-5">
+				<div style="max-width: 55px; min-height: 42px; margin: 0 auto;">
+					<img src="images/gaming.png" style="width: 100%; max-width: 55px;"/>
+				</div>
+				<p>Gaming</p>
+			</div>
+		</div>
+	</div>
+	<div class="tab-content">
+	<div class="content-wrapp">
+		<div id="tab-1-content" class="tab-blocks active">
+			<div class="row">
+				<div class="col-4">
+					<div style="max-width: 340px; margin: 0 auto;"><img src="images/envy-laptop.png" alt="HP ENVY Laptop" style="width: 100%;"/></div>
+					<div style="padding: 30px;">
+						<h3>HP ENVY Laptop</h3>
+						<p>Impossibly thin.  Enviably engineered.<br/>Starting at $849.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 240px; margin: 0 auto; margin-top: 20px"><img src="images/spectre-2.png" alt="HP Spectre x2" style="width: 100%;"/></div>
+					<div style="padding: 30px;">
+						<h3>HP Spectre x2</h3>
+						<p>Reinventing detachables.<br/>Starting at $799.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 358px ;margin: 0 auto;margin-top: 20px;"><img src="images/spectrex360.png" alt="HP Spectre x360" style="width: 100%;"/></div>
+					<div style="padding: 30px;">
+						<h3>HP Spectre x360</h3>
+						<p>360 degrees of versatility.<br/>Starting at $899.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p style="text-align: center; margin-bottom: 40px; font-size: 18px;"><a href="#" class="cta-view-all">View all premium</a></p>
+			</div>
+		</div>
+		<div id="tab-2-content" class="tab-blocks">
+			<div class="row">
+				<div class="col-4">
+					<div style="max-width: 309px; margin: 0 auto; margin-top: 20px"><img src="images/pavilion14.png" alt="HP Pavilion 14" style="width: 100%;"/></div>
+					<div style="padding: 30px;">
+						<h3>HP Pavilion 14</h3>
+						<p>Expressive colors.  Impressive power.<br/>Starting at $549.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 268px; margin: 0 auto; margin-top: 20px"><img src="images/envy-15.png" alt="HP ENVY 15" style="width: 100%;"/></div>
+					<div style="padding: 20px;">
+						<h3>HP ENVY 15</h3>
+						<p>Distinctive design. Unforgettable power.<br/>Starting at $XXX.XX</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 287px ;margin: 0 auto;margin-top: 20px;"><img src="images/pavilion-360.png" alt="HP Pavilion x360" style="width: 100%;"/></div>
+					<div style="padding: 20px; padding-top: 0px">
+						<h3>HP Pavilion x360</h3>
+						<p>Four different modes. One smart price.<br/>Starting at $379.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p style="text-align: center; margin-bottom: 40px; font-size: 18px;"><a href="#" class="cta-view-all">View all great value</a></p>
+			</div>
+
+
+		</div>
+		<div id="tab-3-content" class="tab-blocks">
+			<div class="row">
+				<div class="col-4">
+					<div style="max-width: 318px; margin: 0 auto; margin-top: 20px"><img src="images/chromebook.png" alt="HP Chromebook" style="width: 100%;"/></div>
+					<div style="padding: 20px;">
+						<h3>HP Chromebook</h3>
+						<p>Lightning-fast Chrome OS. Sleek and stylish.<br/>Starting at $199.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 298px; margin: 0 auto; margin-top: 20px"><img src="images/hp-stream.png" alt="HP Stream" style="width: 100%;"/></div>
+					<div style="padding: 20px;">
+						<h3>HP Stream laptop</h3>
+						<p>Incredibly affordable. Totally productive.<br/>Starting at $199.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 287px ;margin: 0 auto;margin-top: 20px;"><img src="images/pavilion-360.png" alt="HP Pavilion x360" style="width: 100%;"/></div>
+					<div style="padding: 20px; padding-top: 0px">
+						<h3>HP Laptop</h3>
+						<p>Right features. Right price.<br/>Starting at $199.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p style="text-align: center; margin-bottom: 40px; font-size: 18px;"><a href="#" class="cta-view-all">View all entry level</a></p>
+			</div>
+
+
+		</div>
+
+		<div id="tab-4-content" class="tab-blocks">
+			<div class="row">
+				<div class="col-4">
+					<div style="max-width: 341px; margin: 0 auto; margin-top: 20px"><img src="images/elitebook-folio.png" alt="HP Chromebook" style="width: 100%;"/></div>
+					<div style="padding: 20px;">
+						<h3>HP Elitebook Folio 1040</h3>
+						<p>World's thinnest and lightest business class laptop.*<br/>Starting at $1229.00</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 250px; margin: 0 auto; margin-top: 10px"><img src="images/mobile-station.png" alt="HP Stream" style="width: 100%;"/></div>
+					<div style="padding: 20px;">
+						<h3>HP mobile workstations</h3>
+						<p>Work anywhere.<br/>Starting at $1199.00</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div style="max-width: 261px ;margin: 0 auto;margin-top: 20px;"><img src="images/pro-laptops.png" alt="HP Pavilion x360" style="width: 100%;"/></div>
+					<div style="padding: 20px; padding-top: 20px">
+						<h3>HP Pro laptops &amp; tablets</h3>
+						<p>Reinvent where you work.<br/>Starting at $449.00</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p style="text-align: center; margin-bottom: 40px; font-size: 18px;"><a href="#" class="cta-view-all">View all business</a></p>
+			</div>
+
+
+		</div>
+		<div id="tab-5-content" class="tab-blocks">
+			<div class="row" style="max-width: 70%; margin: 0 auto;">
+				<div class="col-6">
+					<div style="max-width: 322px; margin: 0 auto; margin-top: 20px"><img src="images/hp-omen.png" alt="HP Chromebook" style="width: 100%;"/></div>
+					<div style="padding: 20px; padding-top: 0px;">
+						<h3>HP OMEN</h3>
+						<p>Gaming reinvented. Ominous power.<br/>Starting at $1499.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+				<div class="col-6">
+					<div style="max-width: 220px; margin: 0 auto; margin-top: 10px"><img src="images/pavilion-gaming.png" alt="HP Stream" style="width: 100%;"/></div>
+					<div style="padding: 10px;">
+						<h3>Pavilion Gaming Notebook</h3>
+						<p>Powerful hardware and a venomous design. 
+						<br/>Starting at $899.99</p>
+						<p style="margin-top: 10px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p style="text-align: center; margin-bottom: 40px; font-size: 18px;"><a href="#" class="cta-view-all">View all gaming</a></p>
+			</div>
+
+
+		</div>
+	</div>
+	<img src="images/laptopModal/img-00000.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00001.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00002.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00003.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00004.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00005.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00006.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00007.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00008.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00009.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00010.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00011.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00012.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00013.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00014.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00015.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00016.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00017.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00018.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00019.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00020.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00021.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00022.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00023.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00024.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00025.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00026.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00027.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00028.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00029.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00030.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00031.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00032.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00033.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00034.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00035.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00036.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00037.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00038.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00039.jpg" width="0" height="0"/>
+	<img src="images/laptopModal/img-00040.jpg" width="0" height="0"/>
+	</div>
+	<div style="position: relative; display: block;">
+	<img src="images/laptopModal/img-00000.jpg" width="100%" height="500"
+	      class="reel"
+	      data-images="images/laptopModal/img-000##.jpg"
+	      data-frames="40"
+	      data-speed="0.3"
+	      data-cursor= "undefined"
+	      data-cw = "true"/>
+	      <div style="position: absolute; top: 30px; width: 100%;">
+	      	<div style="position: relative; max-width: 400px; margin: 0 auto;">
+	      		<h2 style="font-size: 42px; font-weight: 300; text-align: center;">Stunning innovation</h2>
+	      		<p style="font-size: 18px; font-weight: 300; text-align: center;">Get beauty and power that goes beyond expectations with the HP Elite x2</p>
+	      		<div class="row">
+					<p style="text-align: center; margin-bottom: 40px; font-size: 18px; margin-top: 30px;"><a href="#" class="cta-view-all">Explore now</a></p>
+				</div>
+	      	</div>
+	      </div>
+	</div>
+	<!-- 	<div>
+		<img src=" images/laptopModal/img-00000.jpg"				
+		    data-images=" images/laptopModal/img-000##.jpg"
+		 	data-stitched="0"
+		      		data-frames="40"
+		      		data-clickfree="true"
+		      		data-speed="0.3"
+		      		data-cursor= "undefined"
+		      		data-cw = "true"     
+		       		width="100%" height="500" id="HPSpectre" class="reelimg"/>
+	</div> -->
+ <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/s-21px-hpe.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: left -2811px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover {     background-position: left -2846px; }
+        .jssorb05 .av {     background-position: left -2846px;}
+        .jssorb05 .dn, .jssorb05 .dn:hover {     background-position: left -2846px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            height: 38px !important;
+    		width: 38px !important;
+    		top: 30% !important;
+            cursor: pointer;
+            border-color: #838383 transparent transparent #838383 !important;
+            border: 1px solid !important;
+            overflow: hidden;
+                -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-left: 12px !important;
+        }
+        .jssora22l { border-color: #838383 transparent transparent #838383 !important; }
+        .jssora22r {     border-color:transparent #838383 #838383 transparent !important; }
+        .jssora22l:hover { border-color: #0096d6 transparent transparent #0096d6 !important; }
+        .jssora22r:hover {    border-color:transparent #0096d6 #0096d6 transparent !important; }
+        .jssora22l.jssora22ldn { border-color: #0096d6 transparent transparent #0096d6 !important; }
+        .jssora22r.jssora22rdn { border-color:transparent #0096d6 #0096d6 transparent !important;  }
+        .prd-title{
+        	margin-top: 40px;
+        	font-size: 24px;
+        }
+        .prd-column h2, .prd-column p{
+        	text-align: center;
+        }
+    </style>
+	
+<div style="background: #f9f9f9">
+    <h1 style="text-align: center; font-size: 40px; padding-top: 50px; margin-bottom: 50px;color: #767676;">Shop our laptops &amp; tablets</h1>
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden;">
+        	<div data-p="225.00" style="display: none;">
+                 <div class="row" style="padding-left: 40px; padding-right: 40px;" >
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-envy-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP ENVY</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Power to do almost anything.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-spectre-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Spectre</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Style, craftsmanship, and performance.</p>
+						<p style="margin-top: 25px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-elite-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Elite</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Premium business laptops.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-pavilion-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Pavilion</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Expressive colors. Impressive power.</p>
+						<p style="margin-top: 25px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                 <div class="row" style="padding-left: 40px; padding-right: 40px;" >
+                 	<div class="col-3 prd-column">
+                 	    <div style="width :90%; margin: 0 auto;" ><img src="images/chromebook-f.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Chromebook</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Easy, quick and stylish.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-stream-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Stream</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Incredibly affordable. Totally productive.</p>
+						<p style="margin-top: 25px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-omen-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP OMEN</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Gaming reinvented. Ominous.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-laptop-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Laptop</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Right features. Right price.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 </div>
+            </div>
+
+            <div data-p="225.00" style="display: none;">
+                 <div class="row" style="padding-left: 40px; padding-right: 40px;" >
+                 	<div class="col-3 prd-column">
+                 	    <div style="width :90%; margin: 0 auto;" ><img src="images/hp-pro-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Pro</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Proven reliability.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-zworkstations-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Z Workstations</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Powerful. Ready to multitask.</p>
+						<p style="margin-top: 25px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-thin-clients-s.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Thin Clients</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Business needs with thin computing.</p>
+						<p style="margin-top: 25px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 	<div class="col-3 prd-column">
+                 		<div style="width :90%; margin: 0 auto;" ><img src="images/hp-tablets.png" alt="" style="width: 100%; max-width: 320px;"></div>
+                 		<h2 class="prd-title">HP Tablets</h2>
+	                 	<p style="font-size: 18px;
+						    line-height: 24px;">Made to fit your needs.</p>
+						<p style="margin-top: 50px; font-size: 18px;"><a href="#" class="cta-products">Shop now <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                 	</div>
+                 </div>
+            </div>
+
+        </div>
+        <!-- Bullet Navigator -->
+      <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+          <div data-u="prototype" style="width:16px;height:16px;"></div>
+      </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+    <!-- #endregion Jssor Slider End -->
+
+</div>
+<div id="promo" class="row">
+	<div class="content-wrapp">
+		<div class="row">
+			<div class="col-6">
+				<h1>Our latest laptops</h1>
+				<img src="images/promo1_1.png" alt="" style="width: 100%; max-width: 525px;"/>
+				<p>Check out what's new in HP Notebooks.</p>
+				<p style="margin-bottom: 40px; font-size: 18px; margin-top: 30px;"><a href="#" class="cta-view-all">Shop now</a></p>
+			</div>
+			<div class="col-6">
+				<h1>Special offers</h1>
+				<img src="images/promo2.png" alt="" style="width: 100%; max-width: 525px;"/>
+				<p>Amazing laptops &amp; tablets at prices to love.</p>
+				<p style="margin-bottom: 40px; font-size: 18px; margin-top: 30px;"><a href="#" class="cta-view-all">Shop now</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.reel.js"></script>
+<script>
+	 $('.prd-1-content').hide();
+	  $('.prd-2-content').hide();
+	  $('.prd-3-content').hide();
+	$('.col-6').bind('mouseover', function() {
+    $('.'+$(this).attr('id')+'-header').fadeOut();
+    $('.'+$(this).attr('id')+'-content').fadeIn();
+});  
+	$('.col-6').bind('mouseleave', function() {
+    $('.'+$(this).attr('id')+'-header').fadeIn();
+    $('.'+$(this).attr('id')+'-content').fadeOut();
+});  
+	$('.col-7').bind('mouseover', function() {
+    $('.'+$(this).attr('id')+'-header').fadeOut();
+    $('.'+$(this).attr('id')+'-content').fadeIn();
+});  
+	$('.col-7').bind('mouseleave', function() {
+    $('.'+$(this).attr('id')+'-header').fadeIn();
+    $('.'+$(this).attr('id')+'-content').fadeOut();
+});
+ 	$(".tab-sub").click(function(){
+ 		$(".tab-sub").removeClass("active");
+ 		$(this).addClass("active");
+ 		console.log($(this).attr("id"));
+		$(".tab-blocks").removeClass("active");
+		$("#"+$(this).attr("id")+"-content").addClass("active");
+ 		/*else{
+ 			$(".tab-blocks").removeClass("active");
+ 			$("#tab1-content").addClass("active");
+ 		}*/
+ 	});  
+
+    
+
+</script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
+              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
+              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
+              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:10000,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: false,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              /* */
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+         /*   function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize,1050);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);*/
+            //responsive code end
+        });
+    </script>
+
+</body>
+</html>
